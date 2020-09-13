@@ -1,0 +1,38 @@
+@mixin font-base ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $base-font-weight;
+  color: $text-on-white;
+  font-family: $base-font-family;
+  font-style: normal;
+}
+
+@mixin font-header ($size, $height) {
+	font-size: $size;
+	line-height: $height;
+	font-weight: 700;
+	color: $text-on-white;
+	font-family: $base-font-family;
+	font-style: normal;
+}
+
+@mixin list-style {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@mixin link-style {
+    display: block;
+	color: inherit;
+	text-decoration: none;
+}
+
+@mixin element-style ($width, $height, $color) {
+	content: "";
+	display: block;
+	position: absolute;
+	width: $width;
+	height: $height;
+	background-color: $color;
+}

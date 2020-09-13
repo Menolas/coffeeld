@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Rokkitt/Rokkitt-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Rokkitt/Rokkitt-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Rokkitt/Rokkitt-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Rokkitt/Rokkitt-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Rokkitt/Rokkitt-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Rokkitt/Rokkitt-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf") format("truetype"); }
+
+/* font-styles */
+/* colors */
+/* measurements */
+/** {
+  outline: 1px solid red;
+}*/
+html {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #303030;
+  font-family: "Rokkitt";
+  font-style: normal;
+  background-color: #ffffff; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+img {
+  display: block;
+  height: auto; }
+
+input,
+textarea {
+  box-sizing: border-box; }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12px;
+    line-height: 18px; } }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 28px; } }
