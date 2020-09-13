@@ -8,7 +8,8 @@ html {
 
 body {
   margin: 0 auto;
-  @include font-base (14px, 22px);
+  @include font-base ($base-font-size, $base-line-height);
+  color: $text-on-white;
   background-color: $white;
 }
 

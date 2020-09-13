@@ -37,6 +37,6 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", gulp.series("style"));
+  gulp.watch("sass/**/.{scss,sass}", gulp.series("style"));
   gulp.watch("*.html").on("change", server.reload);
 });

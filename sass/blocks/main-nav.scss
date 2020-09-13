@@ -1,0 +1,12 @@
+.main-nav {
+	padding: 46px 24px;
+}
+
+.main-nav__list {
+	@include list-style;
+	display: none;
+}
+
+.main-nav__link {
+	@include link-style;
+}

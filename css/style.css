@@ -63,12 +63,13 @@ html {
 
 body {
   margin: 0 auto;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
-  color: #303030;
+  color: #71706f;
   font-family: "Rokkitt";
   font-style: normal;
+  color: #71706f;
   background-color: #ffffff; }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -109,4 +110,112 @@ textarea {
 @media (min-width: 768px) {
   body {
     font-size: 16px;
-    line-height: 28px; } }
+    line-height: 1.5; } }
+
+.container {
+  margin: 0 auto;
+  max-width: 766px; }
+
+.container--index {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 768px 396px; }
+
+.main-header {
+  color: #ffffff; }
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  background-image: url("../img/dark-background.jpg"); }
+
+.header-top__social .social__list {
+  flex-direction: row; }
+
+.header-top__social .social__item {
+  margin-right: 12px; }
+  .header-top__social .social__item:last-of-type {
+    margin-right: 0; }
+
+.header-top__social .social__link {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ffffff;
+  border-radius: 50%; }
+
+.header-top__social .social__link svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  transform: translate(-50%, -50%); }
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
+
+.social__link {
+  display: block;
+  color: inherit;
+  text-decoration: none; }
+
+.main-nav {
+  padding: 46px 24px; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none; }
+
+.main-nav__link {
+  display: block;
+  color: inherit;
+  text-decoration: none; }
+
+.logo {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 800; }
+
+.toggler {
+  width: 24px;
+  height: 16px; }
+
+.toggler__element {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff; }
+  .toggler__element::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 6px;
+    left: 0; }
+  .toggler__element::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 12px;
+    left: 0; }

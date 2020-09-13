@@ -1,0 +1,8 @@
+.social__list {
+	@include list-style;
+	display: flex;
+}
+
+.social__link {
+	@include link-style;
+}

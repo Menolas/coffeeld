@@ -1,0 +1,24 @@
+.toggler {
+	width: 24px;
+	height: 16px;
+}
+
+.toggler__element {
+	position: relative;
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: $white;
+
+	&::before {
+		@include element-style(24px, 2px, $white);
+		top: 6px;
+		left: 0;
+	}
+
+	&::after {
+		@include element-style(24px, 2px, $white);
+		top: 12px;
+		left: 0;
+	}
+}
