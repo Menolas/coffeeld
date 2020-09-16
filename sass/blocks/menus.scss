@@ -1,0 +1,70 @@
+.menus {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $white;
+}
+
+.menus__title {
+	margin-bottom: 30px;
+}
+
+.menus__list {
+	@include list-style;
+	margin-bottom: 30px;
+}
+
+.menus__item {
+	position: relative;
+	margin-bottom: 2px;
+	padding: 50px 16px;
+	height: 144px;
+	color: $white;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.menus__item-title {
+	margin-bottom: 18px;
+	text-align: center;
+	color: $white;
+}
+
+.menus__item p {
+	text-align: center;
+}
+
+.menus__link {
+	@include link-style;
+	margin-top: 20px;
+	text-align: center;
+	color: $links-color;
+	font-family: "Libre Baskerville";
+}
+
+.menus__shadow-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: $black;
+	z-index: -1;
+}
+
+.menus__shadow-layer img {
+	opacity: 0.6;
+}
+
+@media (min-width: 365px) {
+
+	.menus__item {
+		height: 122px;
+	}
+}
+
+@media (min-width: 717px) {
+    
+    .menus__item {
+		height: 100px;
+	}
+}

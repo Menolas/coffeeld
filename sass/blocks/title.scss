@@ -1,0 +1,22 @@
+.title {
+	text-align: center;
+	color: $white;
+	font-size: 32px;
+	line-height: 1;
+	font-weight: 800;
+}
+
+.title__secondary {
+	text-align: center;
+	color: $titles-color;
+	font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.title__third {
+	color: $titles-color;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.1;
+}

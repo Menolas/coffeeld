@@ -1,3 +1,33 @@
 .main-header {
+	position: relative;
+	padding-bottom: 60px;
 	color: $white;
+	overflow: hidden;
+}
+
+.main-header__moto {
+	margin-top: 15px;
+	text-align: center;
+	color: $white;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.main-header__btn {
+	margin-top: 30px;
+}
+
+.main-header__bg-picture {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 657px;
+	height: 440px;
+	background-image: url("../img/dark-background.jpg");
+	transform: translate(-50%);
+	z-index: -10;
+}
+
+.main-header__bg-picture img {
+	opacity: 0.6;
 }

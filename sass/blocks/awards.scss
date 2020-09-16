@@ -1,0 +1,36 @@
+.awards {
+	padding: 40px 16px;
+	color: $white;
+	background-image: url("../img/dark-background.jpg");
+	background-repeat: no-repeat;
+}
+
+.awards__title {
+	margin-bottom: 30px;
+	color: $white;
+}
+
+.awards__list {
+	@include list-style;
+}
+
+.awards__item {
+	margin-bottom: 30px;
+}
+
+.awards__picture {
+  margin: 0 20%;
+  margin-bottom: 20px;
+}
+
+.awards__picture img {
+	width: 100%;
+}
+
+.awards__name {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.1;
+	font-weight: 700;
+}

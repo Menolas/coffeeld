@@ -1,7 +1,7 @@
 .logo {
 	@include link-style;
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	margin-bottom: 16px;
 	font-size: 24px;
 	line-height: 1;
 	font-weight: 800;

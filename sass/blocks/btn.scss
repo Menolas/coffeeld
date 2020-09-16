@@ -1,0 +1,17 @@
+.btn {
+	@include link-style;
+	margin: 0 5%;
+	padding: 14px 19px;
+	text-align: center;
+	color: $white;
+	font-size: 14px;
+	font-family: "Libre Baskerville";
+	background-color: $cacao;
+	border: none;
+}
+
+.btn--framed {
+  border: 2px solid $buttons-frame;
+  background-color: transparent;
+  color: $titles-color;
+}

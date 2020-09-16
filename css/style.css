@@ -70,7 +70,7 @@ body {
   font-family: "Rokkitt";
   font-style: normal;
   color: #71706f;
-  background-color: #ffffff; }
+  background-color: white; }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -116,20 +116,79 @@ textarea {
   margin: 0 auto;
   max-width: 766px; }
 
-.container--index {
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 768px 396px; }
+.title {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 800; }
+
+.title__secondary {
+  text-align: center;
+  color: #27292b;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1; }
+
+.title__third {
+  color: #27292b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1; }
+
+.btn {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 5%;
+  padding: 14px 19px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: "Libre Baskerville";
+  background-color: #988378;
+  border: none; }
+
+.btn--framed {
+  border: 2px solid #ecc9b7;
+  background-color: transparent;
+  color: #27292b; }
 
 .main-header {
-  color: #ffffff; }
+  position: relative;
+  padding-bottom: 60px;
+  color: white;
+  overflow: hidden; }
+
+.main-header__moto {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 800; }
+
+.main-header__btn {
+  margin-top: 30px; }
+
+.main-header__bg-picture {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 657px;
+  height: 440px;
+  background-image: url("../img/dark-background.jpg");
+  transform: translate(-50%);
+  z-index: -10; }
+
+.main-header__bg-picture img {
+  opacity: 0.6; }
 
 .header-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 16px;
+  align-items: center;
+  padding: 6px 16px;
   background-image: url("../img/dark-background.jpg"); }
 
 .header-top__social .social__list {
@@ -144,7 +203,7 @@ textarea {
   position: relative;
   width: 26px;
   height: 26px;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   border-radius: 50%; }
 
 .header-top__social .social__link svg {
@@ -153,7 +212,7 @@ textarea {
   left: 50%;
   width: 16px;
   height: 16px;
-  fill: #ffffff;
+  fill: white;
   transform: translate(-50%, -50%); }
 
 .social__list {
@@ -168,6 +227,7 @@ textarea {
   text-decoration: none; }
 
 .main-nav {
+  margin-bottom: 34px;
   padding: 46px 24px; }
 
 .main-nav__list {
@@ -185,8 +245,8 @@ textarea {
   display: block;
   color: inherit;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 1;
   font-weight: 800; }
@@ -200,14 +260,14 @@ textarea {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: #ffffff; }
+  background-color: white; }
   .toggler__element::before {
     content: "";
     display: block;
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: white;
     top: 6px;
     left: 0; }
   .toggler__element::after {
@@ -216,6 +276,292 @@ textarea {
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: white;
     top: 12px;
     left: 0; }
+
+.menus {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white; }
+
+.menus__title {
+  margin-bottom: 30px; }
+
+.menus__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px; }
+
+.menus__item {
+  position: relative;
+  margin-bottom: 2px;
+  padding: 50px 16px;
+  height: 144px;
+  color: white;
+  overflow: hidden;
+  z-index: 1; }
+
+.menus__item-title {
+  margin-bottom: 18px;
+  text-align: center;
+  color: white; }
+
+.menus__item p {
+  text-align: center; }
+
+.menus__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  color: #e59d75;
+  font-family: "Libre Baskerville"; }
+
+.menus__shadow-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  z-index: -1; }
+
+.menus__shadow-layer img {
+  opacity: 0.6; }
+
+@media (min-width: 365px) {
+  .menus__item {
+    height: 122px; } }
+
+@media (min-width: 717px) {
+  .menus__item {
+    height: 100px; } }
+
+.cafes {
+  padding: 40px 16px;
+  background-image: url("../img/dark-background.jpg"); }
+
+.cafes__title {
+  margin-bottom: 30px;
+  color: white; }
+
+.cafes__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+
+.cafes__item {
+  margin-bottom: 27px;
+  background-color: white; }
+  .cafes__item:last-of-type {
+    margin-bottom: 0; }
+
+.cafes__picture-wrap {
+  position: relative;
+  max-height: 180px;
+  min-height: 180px;
+  width: 100%;
+  overflow: hidden; }
+
+.cafes__picture-wrap img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.cafes__text-wrap {
+  padding: 30px 15px; }
+
+.cafes__article-title {
+  margin-bottom: 15px; }
+
+.cafes__article-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  margin-top: 15px;
+  color: #e59d75;
+  font-family: "Libre Baskerville"; }
+
+.cafes__btn {
+  margin: 0;
+  margin-top: 30px;
+  width: 100%; }
+
+@media (min-width: 570px) {
+  .cafes__picture-wrap {
+    min-height: 180px;
+    max-height: 321px; } }
+
+.vendors {
+  padding: 40px 16px; }
+
+.vendors__title {
+  margin-bottom: 8px; }
+
+.vendors__text {
+  margin-bottom: 30px;
+  text-align: center; }
+
+.vendors__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.vendors__item {
+  margin-bottom: 30px; }
+  .vendors__item:last-of-type {
+    margin-bottom: 0; }
+
+.vendors__picture-wrap {
+  margin-bottom: 30px;
+  min-height: 181px;
+  max-height: 453px;
+  width: 100%;
+  overflow: hidden; }
+
+.vendors__picture-wrap img {
+  width: 100%; }
+
+.vendors__item-title {
+  margin-bottom: 15px; }
+
+.services {
+  padding: 40px 16px; }
+
+.services__title {
+  margin-bottom: 30px; }
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.services__item {
+  margin-bottom: 30px; }
+  .services__item:last-of-type {
+    margin-bottom: 0; }
+
+.services__picture-wrap {
+  margin: 0 12%;
+  margin-bottom: 30px; }
+
+.services__picture-wrap img {
+  width: 100%;
+  height: 100%; }
+
+.services__item-title {
+  margin-bottom: 15px; }
+
+.services__item-btn {
+  margin: 0;
+  margin-top: 20px;
+  width: 100%; }
+
+.present-list {
+  position: relative;
+  padding: 40px 16px;
+  color: white;
+  overflow: hidden;
+  z-index: 1; }
+
+.present-list__title {
+  margin-bottom: 8px;
+  color: white; }
+
+.present-list p {
+  text-align: center; }
+
+.present-list__btn {
+  margin: 0;
+  margin-top: 30px; }
+
+.present-list__bg-picture {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.about {
+  padding: 40px 16px; }
+
+.about__picture-wrap {
+  margin-bottom: 30px;
+  width: 100%; }
+
+.about__picture-wrap img {
+  width: 100%; }
+
+.about__title {
+  margin-bottom: 30px; }
+
+.about p {
+  margin-bottom: 8px;
+  text-align: center; }
+  .about p:nth-of-type(2) {
+    margin-bottom: 24px; }
+
+.about__btn {
+  margin: 0;
+  margin-top: 30px; }
+
+.awards {
+  padding: 40px 16px;
+  color: white;
+  background-image: url("../img/dark-background.jpg");
+  background-repeat: no-repeat; }
+
+.awards__title {
+  margin-bottom: 30px;
+  color: white; }
+
+.awards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.awards__item {
+  margin-bottom: 30px; }
+
+.awards__picture {
+  margin: 0 20%;
+  margin-bottom: 20px; }
+
+.awards__picture img {
+  width: 100%; }
+
+.awards__name {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 700; }
+
+.article-best-coffee-shop {
+  padding: 40px 16px; }
+
+.article-best-coffee-shop__title {
+  margin-bottom: 30px;
+  text-align: left; }
+
+.article-best-coffee-shop__picture-wrap {
+  margin-bottom: 30px;
+  width: 100%; }
+
+.article-best-coffee-shop__picture-wrap img {
+  width: 100%; }
+
+.article-best-coffee-shop__btn {
+  margin: 0;
+  margin-top: 30px; }
+
+.testimonials {
+  padding: 40px 16px; }

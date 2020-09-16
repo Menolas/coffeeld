@@ -1,0 +1,40 @@
+.vendors {
+	padding: 40px 16px;
+}
+
+.vendors__title {
+	margin-bottom: 8px;
+}
+
+.vendors__text {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.vendors__list {
+	@include list-style;
+}
+
+.vendors__item {
+	margin-bottom: 30px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.vendors__picture-wrap {
+	margin-bottom: 30px;
+	min-height: 181px;
+	max-height: 453px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.vendors__picture-wrap img {
+  width: 100%;
+}
+
+.vendors__item-title {
+	margin-bottom: 15px;
+}

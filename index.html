@@ -60,72 +60,94 @@
             </li>
           </ul>
         </nav>
+          <h1 class="title  main-header__title">Coffeeld</h1>
+          <p class="main-header__moto">Consider yourself at home<br>✻</p>
+          <a class="btn main-header__btn" href="#reservation">Book a reservation</a>
+          <div class="main-header__bg-picture">
+            <img src="img/header-bg-mobile.jpg" alt="Coffeeld">
+          </div>
       </header>
       <main>
-        <div class="main">
-          <h1 class="title  main__title">Coffeeld</h1>
-          <p class="main__moto">Consider yourself at home<br>✻</p>
-          <a class="btn main__btn" href="#reservation">Book a reservation</a>
-        </div>
         <section class="menus" id="menus">
-          <h2 class="menus__title">Menus</h2>
+          <h2 class="title__secondary  menus__title">Menus</h2>
           <ul class="menus__list">
             <li class="menus__item">
               <h3 class="menus__item-title">Coffee menu</h3>
               <p>Our coffee is roasted daily in our Rostery for the richest flavor. Every cup is ground fresh in store.</p>
               <a class="menus__link" href="#">Learn more</a>
+              <div class="menus__shadow-layer">
+                <img src="img/coffee-menu-mobile.jpg" alt="Coffee Menu">
+              </div>
             </li>
             <li class="menus__item">
               <h3 class="menus__item-title">Food menu</h3>
               <p>We use fresh, authentic ingredients to create good, uncomplicated food. Served all day, every day.</p>
               <a class="menus__link" href="#">Learn more</a>
+              <div class="menus__shadow-layer">
+                <img src="img/food-menu-mobile.jpg" alt="Food Menu">
+              </div>
             </li>
             <li class="menus__item">
               <h3 class="menus__item-title">Drinks menu</h3>
               <p>Teas, iced drinks, hot chocolate.</p>
               <p>Everything non-coffee, but still fresh and handcrafted.</p>
               <a class="menus__link" href="#">Learn more</a>
+              <div class="menus__shadow-layer">
+                <img src="img/drinks-menu-mobile.jpg" alt="Drinks Menu">
+              </div>
             </li>
           </ul>
-          <a class="btn  menus__btn" href="menu.html">Full menu</a>
+          <a class="btn  btn--framed  menus__btn" href="menu.html">Full menu</a>
         </section>
         <section class="cafes">
           <h2 class="title__secondary  cafes__title">Cafes</h2>
           <ul class="cafes__list">
             <li class="cafes__item">
               <article class="cafes__article">
-                <img src="img/cafes1-mobile.jpg" alt="Walnut Creek">
-                <h3 class="title__third  cafes__article-title">
-                  Walnut Creek
-                </h3>
-                <p>
-                  Come and have a coffee in a cozy place downtown. This coffee shop is surely the best place to relax after a tough day at work.
-                </p>
-                <a class="cafes__article-link" href="#">View location</a>
+                <div class="cafes__picture-wrap">
+                  <img src="img/walnut-creek-mobile.jpg" alt="Walnut Creek">
+                </div>
+                <div class="cafes__text-wrap">
+                  <h3 class="title__third  cafes__article-title">
+                    Walnut Creek
+                  </h3>
+                  <p>
+                    Come and have a coffee in a cozy place downtown. This coffee shop is surely the best place to relax after a tough day at work.
+                  </p>
+                  <a class="cafes__article-link" href="#">View location</a>
+                </div>
               </article>
             </li>
             <li class="cafes__item">
               <article class="cafes__article">
-                <img src="img/cafes1-mobile.jpg" alt="Walnut Creek">
-                <h3 class="title__third  cafes__article-title">
-                  Lafayette
-                </h3>
-                <p>
-                  Start your day off with any coffee you like. From the finest Arabica to exotic Robusta. You can enjoy coffee of any kind and preparation method at this café.
-                </p>
-                <a class="cafes__article-link" href="#">View location</a>
+                <div class="cafes__picture-wrap">
+                  <img src="img/lafayette-mobile.jpg" alt="Lafayette">
+                </div>
+                <div class="cafes__text-wrap">
+                  <h3 class="title__third  cafes__article-title">
+                    Lafayette
+                  </h3>
+                  <p>
+                    Start your day off with any coffee you like. From the finest Arabica to exotic Robusta. You can enjoy coffee of any kind and preparation method at this café.
+                  </p>
+                  <a class="cafes__article-link" href="#">View location</a>
+                </div>
               </article>
             </li>
             <li class="cafes__item">
               <article class="cafes__article">
-                <img src="img/cafes1-mobile.jpg" alt="Walnut Creek">
-                <h3 class="title__third  cafes__article-title">
-                  Alamo
-                </h3>
-                <p>
-                  Feel a little tired in the morning? Don’t forget to grab a cup of coffee before work at the fast and convenient Alamo café drive though.
-                </p>
-                <a class="cafes__article-link" href="#">View location</a>
+                <div class="cafes__picture-wrap">
+                  <img src="img/alamo-mobile.jpg" alt="Alamo">
+                </div>
+                <div class="cafes__text-wrap">
+                  <h3 class="title__third  cafes__article-title">
+                    Alamo
+                  </h3>
+                  <p>
+                    Feel a little tired in the morning? Don’t forget to grab a cup of coffee before work at the fast and convenient Alamo café drive though.
+                  </p>
+                  <a class="cafes__article-link" href="#">View location</a>
+                </div>
               </article>
             </li>
           </ul>
@@ -133,33 +155,41 @@
         </section>
         <section class="vendors">
           <h2 class="title__secondary  vendors__title">Coffee Vendors</h2>
-          <p>
+          <p class="vendors__text">
             We are supplied with only fresh and delicious coffee that we prepare for our customers, along with retail coffee bags that are available for purchase.
           </p>
           <ul class="vendors__list">
             <li class="vendors__item">
-              <img src="#" alt="Stumptown Coffee">
+              <div class="vendors__picture-wrap">
+                <img src="img/stumptown-coffee-mobile.jpg" alt="Stumptown Coffee">
+              </div>
               <h3 class="title__third  vendors__item-title">Stumptown Coffee</h3>
               <p>
                 Stumptown vendors offer the best Arabica coffee beans, both strong and mild. Moreover, here you can learn how to brew coffee yourself. Subscribe for more info, or visit the vendor shops at Seattle, NY or LA.
               </p>
             </li>
             <li class="vendors__item">
-              <img src="#" alt="George Howell Coffee">
+              <div class="vendors__picture-wrap">
+                <img src="img/george-howell-coffee-mobile.jpg" alt="George Howell Coffee">
+              </div>
               <h3 class="title__third  vendors__item-title">George Howell Coffee</h3>
               <p>
                 We aim at selling coffee of the highest quality to our clients. We buy only organic and fresh regional beans that will satisfy the taste of any coffee lover.
               </p>
             </li>
             <li class="vendors__item">
-              <img src="#" alt="Cafe Grumpy">
+              <div class="vendors__picture-wrap">
+                <img src="img/cafe-grumpy-mobile.jpg" alt="Cafe Grumpy">
+              </div>
               <h3 class="title__third  vendors__item-title">Cafe Grumpy</h3>
               <p>
                 Our only key objective is high quality. Our mission is to provide our customers with the best coffee beans available on the market today.
               </p>
             </li>
             <li class="vendors__item">
-              <img src="#" alt="Sightglass Coffee">
+              <div class="vendors__picture-wrap">
+                <img src="img/sightglass-coffee-mobile.jpg" alt="Sightglass Coffee">
+              </div>
               <h3 class="title__third  vendors__item-title">Sightglass Coffee</h3>
               <p>
                To roast coffee, you need a lot of dedication and skill. Our company specializes in this process for more than 10 years and supplies only the finest beans.
@@ -171,20 +201,24 @@
           <h2 class="title__secondary  services__title">Services</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img src="#" alt="Subscription">
+              <div class="services__picture-wrap">
+                <img src="img/subscription-mobile.jpg" alt="Subscription">
+              </div>
               <h3 class="title__third  services__item-title">Subscription</h3>
               <p>
                 Subscribe to receive the best coffee beans delivered to your door. Our comfortable website offers versatile product selection options, while allowing you to choose the amount, the time, place, and frequency of the delivery.
               </p>
-              <button class="btn  services__item-btn">Subscribe</button>
+              <button class="btn  btn--framed  services__item-btn">Subscribe</button>
             </li>
             <li class="services__item">
-              <img src="#" alt="Delivery">
+              <div class="services__picture-wrap">
+                <img src="img/delivery-mobile.jpg" alt="Delivery">
+              </div>
               <h3 class="title__third  services__item-title">Delivery</h3>
               <p>
                 Our firm delivers from our William Street location via GrubHub, Monday through Friday, 11 AM to 5:30 PM. For pick-up orders or catering service, give us a call or visit us personally.
               </p>
-              <button class="btn  services__item-btn">Order</button>
+              <button class="btn  btn--framed  services__item-btn">Order</button>
             </li>
           </ul>
         </section>
@@ -196,8 +230,14 @@
             Here's a list of presents that will suit any coffee lover.
           </p>
           <a class="btn  present-list__btn" href="contacts.html">Go to the shop</a>
+          <div class="present-list__bg-picture">
+            <img src="img/present-list-bg.jpg" alt="Shops">
+          </div>
         </section>
         <section class="about">
+          <div class="about__picture-wrap">
+            <img src="img/about-index-mobile.jpg" alt="About Coffeeld">
+          </div>
           <h2 class="title__secondary  about__title">Our Story</h2>
           <p>
             Coffeeld was founded with an aim to become the best coffee shop in New York City.
@@ -208,31 +248,39 @@
           <p>
             Our bakery, cookies, and sweets are made by professional pastry chefs whose only aim is to make delightful freshly-baked goods for our customers.
           </p>
-          <a class="btn  about__btn" href="about.html">More about us</a>
+          <a class="btn  btn--framed  about__btn" href="about.html">More about us</a>
         </section>
         <section class="awards" id="awards">
           <h2 class="title__secondary  awards__title">Awards</h2>
           <ul class="awards__list">
             <li class="awards__item">
-              <div class="awards__picture"></div>
+              <div class="awards__picture">
+                <img src="img/best-blending.png" alt="Best Blending Award">
+              </div>
               <span class="awards__name">
                 Best Blending Award (2017)
               </span>
             </li>
             <li class="awards__item">
-              <div class="awards__picture"></div>
+              <div class="awards__picture">
+                <img src="img/supreme-award.png" alt="Best Supreme Award">
+              </div>
               <span class="awards__name">
                 Award for Supreme Coffee Quality (2017)
               </span>
             </li>
             <li class="awards__item">
-              <div class="awards__picture"></div>
+              <div class="awards__picture">
+                <img src="img/best-pastry.png" alt="Best Pastry Award">
+              </div>
               <span class="awards__name">
                 Best Pastry Award (2016)
               </span>
             </li>
             <li class="awards__item">
-              <div class="awards__picture"></div>
+              <div class="awards__picture">
+                <img src="img/best-mild-coffee.png" alt="Best Mild Coffee Award Award">
+              </div>
               <span class="awards__name">
                 Best Mild Coffee Taste Award (2015)
               </span>
@@ -240,14 +288,16 @@
           </ul>
         </section>
         <article class="article-best-coffee-shop">
-          <img src="#" alt="Best Coffee Shop">
+          <div class="article-best-coffee-shop__picture-wrap">
+            <img src="img/best-coffee-shop-mobile.jpg" alt="Best Coffee Shop">
+          </div>
           <h2 class="title__secondary  article-best-coffee-shop__title">
             Diablo Magazine’s Best Coffee Shop in the East Bay in 2016 and 2017
           </h2>
           <p>
             This coffee shop was instantly beloved by customers when it first opened its doors. Within a year it expanded to a chain of shops and continues to grow today. This café works with the best coffee vendors in the country and brews the finest coffee in the area.
           </p>
-          <a class="btn  article-best-coffee-shop__btn" href="about.html">
+          <a class="btn  btn--framed  article-best-coffee-shop__btn" href="about.html">
             Read full story
           </a>
         </article>
