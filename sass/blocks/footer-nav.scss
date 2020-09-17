@@ -1,0 +1,21 @@
+.footer-nav {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.footer-nav__list {
+	@include list-style;
+}
+
+.footer-nav__item {
+	margin-bottom: 20px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.footer-nav__link {
+	@include link-style;
+	text-align: center;
+}

@@ -1,0 +1,12 @@
+.copyrights {
+	text-align: center;
+	font-size: 12px;
+	color: rgb(155, 162, 170);
+}
+
+.copyrights a {
+	@include link-style;
+	display: inline-block;
+	color: $links-color;
+	text-decoration: underline;
+}
