@@ -1,3 +1,32 @@
 .testimonials {
 	padding: 40px 16px;
 }
+
+.testimonials__title {
+	margin-bottom: 30px;
+}
+
+.testimonials__list {
+	@include list-style;
+}
+
+.testimonials__name {
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
+	color: $titles-color;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.testimonials__item p {
+	text-align: center;
+}
+
+.testimonials__date {
+	display: block;
+	margin-top: 12px;
+	text-align: center;
+	font-size: 12px;
+}

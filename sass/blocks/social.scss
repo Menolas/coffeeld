@@ -4,5 +4,14 @@
 }
 
 .social__link {
+	position: relative;
 	@include link-style;
+	border-radius: 50%;
+}
+
+.social__link svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

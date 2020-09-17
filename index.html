@@ -341,77 +341,97 @@
             <span class="handlers__item  handlers__item--right"></span>
           </div>
           <ul class="gallery-index__list">
+            <li class="gallery-index__item  gallery-index__item--active">
+              <img src="img/gallery-index/illustr-1-mobile.jpg" alt="gallery Illustration">
+            </li>
             <li class="gallery-index__item">
-              <img src="#" alt="">
+              <img src="img/gallery-index/illustr-2-mobile.jpg" alt="gallery Illustration">
+            </li>
+            <li class="gallery-index__item">
+              <img src="img/gallery-index/illustr-3-mobile.jpg" alt="gallery Illustration">
+            </li>
+            <li class="gallery-index__item">
+              <img src="img/gallery-index/illustr-4-mobile.jpg" alt="gallery Illustration">
+            </li>
+            <li class="gallery-index__item">
+              <img src="img/gallery-index/illustr-5-mobile.jpg" alt="gallery Illustration">
+            </li>
+            <li class="gallery-index__item">
+              <img src="img/gallery-index/illustr-6-mobile.jpg" alt="gallery Illustration">
+            </li>
+            <li class="gallery-index__item">
+              <img src="img/gallery-index/illustr-7-mobile.jpg" alt="gallery Illustration">
             </li>
           </ul>
-          <a class="bnt  gallery-index__btn" href="gallery.html"></a>
+          <a class="btn  btn--framed  gallery-index__btn" href="gallery.html">
+            View full gallery
+          </a>
         </section>
-        <section class="map">
-          <h2 class="title__secondary  map__title">Location</h2>
-          <div class="map__wrap"></div>
-        </section>
-        <section class="contacts-index">
-          <h2 class="title__secondary  contacts-index__title">Coffeeld</h2>
-          <div class="contacts-index__element">
-            <span class="contacts-index__element-name">Address</span>
+        <section class="location-index">
+          <h2 class="title__secondary  location-index__title">Location</h2>
+          <div class="map"></div>
+          <a class="logo  location-index__logo" href="#">Coffeeld</a>
+          <div class="location-index__element">
+            <span class="location-index__element-name">Address</span>
             <p>
               8020 Shore Rd.<br>
               Brooklyn, NY 11209
             </p>
           </div>
-          <div class="contacts-index__element">
-            <span class="contacts-index__element-name">Phone</span>
-            <span>+47(000)6699</span>
+          <div class="location-index__element">
+            <span class="location-index__element-name">Phone</span>
+            <span class="location-index__link">+47(000)6699</span>
           </div>
-          <div class="contacts-index__element">
-            <span class="contacts-index__element-name">E-mail</span>
-            <span>coffeeld@gmail.com</span>
-            <p></p>
+          <div class="location-index__element">
+            <span class="location-index__element-name">E-mail</span>
+            <span class="location-index__link">coffeeld@gmail.com</span>
           </div>
-          <div class="social">
+          <div class="social  location-index__social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#">We are in Facebook</a>
+                <a class="social__link" href="#">
+                  <svg><use xlink:href="img/svg/sprite.svg#facebook"></use></svg>
+                  <span class="visually-hidden">We are in Facebook</span>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#">We are in Twitter</a>
+                <a class="social__link" href="#">
+                  <svg><use xlink:href="img/svg/sprite.svg#twitter"></use></svg>
+                  <span class="visually-hidden">We are in Twitter</span>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#">We are in Instagram</a>
+                <a class="social__link" href="#">
+                  <svg><use xlink:href="img/svg/sprite.svg#insta"></use></svg>
+                  <span class="visually-hidden">We are in Instagram</span>
+                </a>
               </li>
             </ul>
-          </div> 
+          </div>
         </section>
         <section class="reservation" id="reservation">
-          <h2 class="title__secondary  reservation__title">Reservation</h2>
-          <p>Book a table in one of our cafes!</p>
           <form class="form  reservation-form">
+            <h2 class="title__secondary  reservation-form__title">Reservation</h2>
+            <p>Book a table in one of our cafes!</p>
             <div class="form__input-wrap">
-              <label for="name">Name*</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" placeholder="Name*">
             </div>
             <div class="form__input-wrap">
-              <label for="phone">Phone number*</label>
-              <input type="number" name="phone" id="phone">
+              <input type="number" name="phone" id="phone" placeholder="Phone number*">
             </div>
             <div class="form__input-wrap">
-              <label for="name">Name*</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" placeholder="">
             </div>
             <div class="form__input-wrap">
-              <label for="amount">Amount of persons*</label>
-              <input type="number" name="amount" id="amount">
+              <input type="number" name="amount" id="amount" placeholder="Amount of persons*">
             </div>
             <div class="form__input-wrap">
-              <label for="date">Time</label>
-              <input type="date" name="date" id="date">
+              <input type="date" name="date" id="date" placeholder="Time">
             </div>
             <div class="form__input-wrap">
-              <label for="message">Your message</label>
-              <textarea id="message"></textarea>
+              <textarea id="message">Your message</textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button class="btn  reservation-form__btn" type="submit">Submit</button>
           </form>
         </section>
       </main>

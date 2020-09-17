@@ -1,0 +1,29 @@
+.gallery-index {
+	position: relative;
+	padding: 40px 0;
+}
+
+.gallery-index__title {
+	margin-bottom: 30px;
+}
+
+.gallery-index__list {
+	@include list-style;
+}
+
+.gallery-index__item {
+	display: none;
+	width: 100%;
+}
+
+.gallery-index__item--active {
+	display: block;
+}
+
+.gallery-index__item img {
+	width: 100%;
+}
+
+.gallery-index__btn {
+	margin-top: 30px;
+}

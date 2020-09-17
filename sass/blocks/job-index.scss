@@ -1,0 +1,29 @@
+.job-index {
+	position: relative;
+	padding: 40px 16px;
+	color: $white;
+	background-color: $black;
+  z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+		background-image: url("../img/job-coffeeld.jpg");
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+}
+
+.job-index__title {
+	margin-bottom: 8px;
+	color: $white;
+}
+
+.job-index p {
+	text-align: center;
+}
+
+.job-index__btn {
+	margin-top: 30px;
+}

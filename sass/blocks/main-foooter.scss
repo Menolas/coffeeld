@@ -1,0 +1,11 @@
+.main-foooter {
+	padding: 40px 16px 20px;
+	color: $white;
+	background-image: url("../img/dark-background.jpg");
+}
+
+@media (min-width: 480px) {
+	.main-foooter {
+		padding: 40px 24px 20px;
+	}
+}
