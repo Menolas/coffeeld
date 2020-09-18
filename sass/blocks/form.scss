@@ -1,4 +1,5 @@
 .form__input-wrap {
+	position: relative;
 	margin-bottom: 45px;
 	width: 100%;
 
@@ -12,7 +13,18 @@
 .form select {
 	padding: 14px 19px;
 	width: 100%;
+	color: rgb(113, 112, 111);
 	background-color: $input-bg;
 	border: none;
+}
+
+.form select {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form textarea {
+	resize: none;
 }
 

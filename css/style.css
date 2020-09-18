@@ -808,6 +808,7 @@ textarea {
   background-position: center; }
 
 .form__input-wrap {
+  position: relative;
   margin-bottom: 45px;
   width: 100%; }
   .form__input-wrap:last-of-type {
@@ -818,8 +819,17 @@ textarea {
 .form select {
   padding: 14px 19px;
   width: 100%;
+  color: #71706f;
   background-color: rgba(103, 103, 103, 0.2);
   border: none; }
+
+.form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.form textarea {
+  resize: none; }
 
 .reservation-form {
   padding: 60px 40px 70px;
@@ -831,6 +841,31 @@ textarea {
 .reservation-form p {
   margin-bottom: 30px;
   text-align: center; }
+
+.reservation-form .form__select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 18px;
+  height: 16px;
+  background-color: transparent;
+  transform: translate(0, -50%); }
+  .reservation-form .form__select-arrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    left: 2px;
+    top: -2px;
+    border: 3px solid #505050;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg); }
+
+.reservation-form textarea {
+  min-height: 150px; }
 
 .reservation-form__btn {
   margin: 0;

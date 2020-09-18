@@ -12,6 +12,30 @@
 	text-align: center;
 }
 
+.reservation-form  .form__select-arrow {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 18px;
+	height: 16px;
+	background-color: transparent;
+	transform: translate(0, -50%);
+
+	&::before {
+		@include element-style(10px, 10px, transparent);
+		left: 2px;
+		top: -2px;
+	  border: 3px solid rgb(80, 80, 80);
+	  border-top: none;
+	  border-left: none;
+	  transform: rotate(45deg);
+	}
+}
+
+.reservation-form textarea {
+	min-height: 150px;
+}
+
 .reservation-form__btn {
 	margin: 0;
 	margin-top: 40px;
