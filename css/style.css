@@ -154,6 +154,31 @@ textarea {
   background-color: transparent;
   color: #27292b; }
 
+.handlers {
+  position: absolute;
+  top: 155px;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  transform: translate(-50%); }
+
+.handlers__item {
+  width: 16px;
+  height: 16px;
+  border: 5px solid #988378;
+  background-color: transparent;
+  transform: rotate(45deg); }
+
+.handlers__item--right {
+  border-bottom: none;
+  border-left: none; }
+
+.handlers__item--left {
+  border-top: none;
+  border-right: none; }
+
 .main-header {
   position: relative;
   padding-bottom: 60px;
@@ -184,12 +209,27 @@ textarea {
   opacity: 0.6; }
 
 .header-top {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 6px 16px;
-  background-image: url("../img/dark-background.jpg"); }
+  background-color: black;
+  z-index: 1; }
+  .header-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/dark-background.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1; }
 
 .header-top__social .social__list {
   flex-direction: row; }
@@ -345,8 +385,23 @@ textarea {
     height: 100px; } }
 
 .cafes {
+  position: relative;
   padding: 40px 16px;
-  background-image: url("../img/dark-background.jpg"); }
+  background-color: black;
+  z-index: 1; }
+  .cafes::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/dark-background.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1; }
 
 .cafes__title {
   margin-bottom: 30px;
@@ -472,8 +527,22 @@ textarea {
   position: relative;
   padding: 40px 16px;
   color: white;
-  overflow: hidden;
+  background-color: black;
   z-index: 1; }
+  .present-list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/present-list-bg.jpg");
+    background-size: cover;
+    background-position: -45px;
+    opacity: 0.7;
+    z-index: -1; }
 
 .present-list__title {
   margin-bottom: 8px;
@@ -485,14 +554,6 @@ textarea {
 .present-list__btn {
   margin: 0;
   margin-top: 30px; }
-
-.present-list__bg-picture {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; }
 
 .about {
   padding: 40px 16px; }
@@ -518,10 +579,24 @@ textarea {
   margin-top: 30px; }
 
 .awards {
+  position: relative;
   padding: 40px 16px;
   color: white;
-  background-image: url("../img/dark-background.jpg");
-  background-repeat: no-repeat; }
+  background-color: black;
+  z-index: 1; }
+  .awards::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/dark-background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1; }
 
 .awards__title {
   margin-bottom: 30px;
@@ -568,7 +643,9 @@ textarea {
   margin-top: 30px; }
 
 .testimonials {
-  padding: 40px 16px; }
+  position: relative;
+  padding: 40px 16px;
+  padding-bottom: 110px; }
 
 .testimonials__title {
   margin-bottom: 30px; }
@@ -587,6 +664,12 @@ textarea {
   font-weight: 700;
   line-height: 1.1; }
 
+.testimonials__item {
+  display: none; }
+
+.testimonials__item--active {
+  display: block; }
+
 .testimonials__item p {
   text-align: center; }
 
@@ -595,6 +678,15 @@ textarea {
   margin-top: 12px;
   text-align: center;
   font-size: 12px; }
+
+.testimonials__handlers {
+  top: 80%;
+  width: 25%; }
+
+.testimonials__handlers .handlers__item {
+  width: 22px;
+  height: 22px;
+  border-width: 7px; }
 
 .job-index {
   position: relative;
@@ -613,6 +705,9 @@ textarea {
     left: 0;
     background-image: url("../img/job-coffeeld.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -56px;
+    opacity: 0.6;
     z-index: -1; }
 
 .job-index__title {
@@ -650,36 +745,24 @@ textarea {
 .gallery-index__btn {
   margin-top: 30px; }
 
-.handlers {
-  position: absolute;
-  top: 155px;
-  left: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 85%;
-  transform: translate(-50%); }
-
-.handlers__item {
-  width: 16px;
-  height: 16px;
-  border: 5px solid #988378;
-  background-color: transparent;
-  transform: rotate(45deg); }
-
-.handlers__item--right {
-  border-bottom: none;
-  border-left: none; }
-
-.handlers__item--left {
-  border-top: none;
-  border-right: none; }
-
 .location-index {
   position: relative;
   padding: 40px 16px;
-  background-image: url("../img/light-background.jpg");
-  background-repeat: no-repeat; }
+  background-color: white;
+  z-index: 1; }
+  .location-index::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/light-background.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1; }
 
 .location-index__title {
   margin-bottom: 30px; }
@@ -721,7 +804,8 @@ textarea {
 .reservation {
   padding: 40px 0;
   background-image: url("../img/reservation-bg.jpg");
-  background-repeat: no-repeat; }
+  background-size: cover;
+  background-position: center; }
 
 .form__input-wrap {
   margin-bottom: 45px;
@@ -730,7 +814,8 @@ textarea {
     margin-bottom: 0; }
 
 .form input,
-.form textarea {
+.form textarea,
+.form select {
   padding: 14px 19px;
   width: 100%;
   background-color: rgba(103, 103, 103, 0.2);
@@ -753,9 +838,24 @@ textarea {
   width: 100%; }
 
 .main-foooter {
+  position: relative;
   padding: 40px 16px 20px;
   color: white;
-  background-image: url("../img/dark-background.jpg"); }
+  background-color: black;
+  z-index: 1; }
+  .main-foooter::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/dark-background.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1; }
 
 .main-foooter__wellcoming {
   text-align: center;

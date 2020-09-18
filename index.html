@@ -230,9 +230,6 @@
             Here's a list of presents that will suit any coffee lover.
           </p>
           <a class="btn  present-list__btn" href="contacts.html">Go to the shop</a>
-          <div class="present-list__bg-picture">
-            <img src="img/present-list-bg.jpg" alt="Shops">
-          </div>
         </section>
         <section class="about">
           <div class="about__picture-wrap">
@@ -304,7 +301,7 @@
         <section class="testimonials" id="testimonials">
           <h2 class="title__secondary  testimonials__title">Testimonials</h2>
           <ul class="testimonials__list">
-            <li class="testimonials__item">
+            <li class="testimonials__item  testimonials__item--active">
               <span class="testimonials__name">Elisabeth Smith</span>
               <p>
                 "The beverage quality in this place is outstanding. I come here twice a day, before and after work, to enjoy a cup of freshly brewed delicious coffee. From a simple black coffee to an iced latte, the taste is always exceptional!"
@@ -420,13 +417,18 @@
               <input type="number" name="phone" id="phone" placeholder="Phone number*">
             </div>
             <div class="form__input-wrap">
-              <input type="text" name="name" id="name" placeholder="">
+              <select>
+                <option selected disabled hidden value="defolt">Choose a cafe</option>
+                <option value="Walnut Creek">Walnut Creek</option>
+                <option value="Lafayette">Lafayette</option>
+                <option value="Alamo">Alamo</option>
+              </select>
             </div>
             <div class="form__input-wrap">
               <input type="number" name="amount" id="amount" placeholder="Amount of persons*">
             </div>
             <div class="form__input-wrap">
-              <input type="date" name="date" id="date" placeholder="Time">
+              <input type="text" name="date" id="date" placeholder="Time">
             </div>
             <div class="form__input-wrap">
               <textarea id="message">Your message</textarea>

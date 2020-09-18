@@ -1,10 +1,22 @@
 .header-top {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	padding: 6px 16px;
-	background-image: url("../img/dark-background.jpg");
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+	  background-image: url("../img/dark-background.jpg");
+	  background-size: cover;
+	  opacity: 0.7;
+	  z-index: -1;
+	}
 }
 
 .header-top__social .social__list {

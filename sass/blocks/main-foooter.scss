@@ -1,7 +1,19 @@
 .main-foooter {
+	position: relative;
 	padding: 40px 16px 20px;
 	color: $white;
-	background-image: url("../img/dark-background.jpg");
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+	  background-image: url("../img/dark-background.jpg");
+	  background-size: cover;
+	  opacity: 0.4;
+	  z-index: -1;
+	}
 }
 
 .main-foooter__wellcoming {

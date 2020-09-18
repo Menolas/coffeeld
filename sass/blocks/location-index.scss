@@ -1,8 +1,18 @@
 .location-index {
 	position: relative;
 	padding: 40px 16px;
-	background-image: url("../img/light-background.jpg");
-	background-repeat: no-repeat;
+	background-color: $white;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+	  background-image: url("../img/light-background.jpg");
+	  background-size: cover;
+	  opacity: 0.4;
+	  z-index: -1;
+	}
 }
 
 .location-index__title {

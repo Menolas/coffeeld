@@ -1,5 +1,7 @@
 .testimonials {
+	position: relative;
 	padding: 40px 16px;
+	padding-bottom: 110px;
 }
 
 .testimonials__title {
@@ -20,6 +22,14 @@
 	line-height: 1.1;
 }
 
+.testimonials__item {
+	display: none;
+}
+
+.testimonials__item--active {
+	display: block;
+}
+
 .testimonials__item p {
 	text-align: center;
 }
@@ -29,4 +39,15 @@
 	margin-top: 12px;
 	text-align: center;
 	font-size: 12px;
+}
+
+.testimonials__handlers {
+  top: 80%;
+  width: 25%;
+}
+
+.testimonials__handlers .handlers__item {
+	width: 22px;
+	height: 22px;
+	border-width: 7px;
 }
