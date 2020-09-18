@@ -182,8 +182,24 @@ textarea {
 .main-header {
   position: relative;
   padding-bottom: 60px;
+  text-align: center;
   color: white;
-  overflow: hidden; }
+  background-color: black;
+  z-index: 1; }
+  .main-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/header-bg-mobile.jpg");
+    background-size: cover;
+    background-position: center 30px;
+    opacity: 0.6;
+    z-index: -1; }
 
 .main-header__moto {
   margin-top: 15px;
@@ -195,18 +211,11 @@ textarea {
 .main-header__btn {
   margin-top: 30px; }
 
-.main-header__bg-picture {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 657px;
-  height: 440px;
-  background-image: url("../img/dark-background.jpg");
-  transform: translate(-50%);
-  z-index: -10; }
-
-.main-header__bg-picture img {
-  opacity: 0.6; }
+@media (min-width: 480px) {
+  .main-header__btn {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px; } }
 
 .header-top {
   position: relative;
@@ -344,8 +353,29 @@ textarea {
   padding: 50px 16px;
   height: 144px;
   color: white;
-  overflow: hidden;
+  background-color: black;
   z-index: 1; }
+  .menus__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1; }
+
+.menus__item--coffee::before {
+  background-image: url("../img/coffee-menu-mobile.jpg"); }
+
+.menus__item--food::before {
+  background-image: url("../img/food-menu-mobile.jpg"); }
+
+.menus__item--drinks::before {
+  background-image: url("../img/drinks-menu-mobile.jpg"); }
 
 .menus__item-title {
   margin-bottom: 18px;
@@ -363,18 +393,6 @@ textarea {
   text-align: center;
   color: #e59d75;
   font-family: "Libre Baskerville"; }
-
-.menus__shadow-layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: black;
-  z-index: -1; }
-
-.menus__shadow-layer img {
-  opacity: 0.6; }
 
 @media (min-width: 365px) {
   .menus__item {
