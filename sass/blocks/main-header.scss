@@ -38,3 +38,15 @@
     margin-top: 30px;
 	}
 }
+
+@media (min-width: 768px) {
+
+	.main-header {
+		padding-bottom: 120px;
+	}
+
+	.main-header__moto {
+		margin-top: 30px;
+		font-size: 26px;
+	}
+}

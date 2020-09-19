@@ -20,3 +20,18 @@
 	font-weight: 700;
 	line-height: 1.1;
 }
+
+@media (min-width: 768px) {
+
+	.title {
+		font-size: 62px;
+	}
+
+	.title__secondary {
+		font-size: 26px;
+	}
+
+	.title__third {
+		font-size: 20px;
+	}
+}

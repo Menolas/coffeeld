@@ -27,3 +27,11 @@
 .gallery-index__btn {
 	margin-top: 30px;
 }
+
+@media (min-width: 768px) {
+
+	.gallery-index {
+		padding: 40px 32px;
+		text-align: center;
+	}
+}

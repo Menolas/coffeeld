@@ -69,20 +69,26 @@
           <h2 class="title__secondary  menus__title">Menus</h2>
           <ul class="menus__list">
             <li class="menus__item  menus__item--coffee">
-              <h3 class="menus__item-title">Coffee menu</h3>
-              <p>Our coffee is roasted daily in our Rostery for the richest flavor. Every cup is ground fresh in store.</p>
-              <a class="menus__link" href="#">Learn more</a>
+              <div class="menus__item-content">
+                <h3 class="title__third  menus__item-title">Coffee menu</h3>
+                <p>Our coffee is roasted daily in our Rostery for the richest flavor. Every cup is ground fresh in store.</p>
+                <a class="menus__link" href="#">Learn more</a>
+              </div>
             </li>
             <li class="menus__item  menus__item--food">
-              <h3 class="menus__item-title">Food menu</h3>
-              <p>We use fresh, authentic ingredients to create good, uncomplicated food. Served all day, every day.</p>
-              <a class="menus__link" href="#">Learn more</a>
+              <div class="menus__item-content">
+                <h3 class="title__third  menus__item-title">Food menu</h3>
+                <p>We use fresh, authentic ingredients to create good, uncomplicated food. Served all day, every day.</p>
+                <a class="menus__link" href="#">Learn more</a>
+              </div>
             </li>
             <li class="menus__item  menus__item--drinks">
-              <h3 class="menus__item-title">Drinks menu</h3>
-              <p>Teas, iced drinks, hot chocolate.</p>
-              <p>Everything non-coffee, but still fresh and handcrafted.</p>
-              <a class="menus__link" href="#">Learn more</a>
+              <div class="menus__item-content">
+                <h3 class="title__third  menus__item-title">Drinks menu</h3>
+                <p>Teas, iced drinks, hot chocolate.</p>
+                <p>Everything non-coffee, but still fresh and handcrafted.</p>
+                <a class="menus__link" href="#">Learn more</a>
+              </div>
             </li>
           </ul>
           <a class="btn  btn--framed  menus__btn" href="menu.html">Full menu</a>
@@ -93,7 +99,10 @@
             <li class="cafes__item">
               <article class="cafes__article">
                 <div class="cafes__picture-wrap">
-                  <img src="img/walnut-creek-mobile.jpg" alt="Walnut Creek">
+                  <picture>
+                    <source media="(min-width: 1024px)" srcset="img/walnut-creek.jpg">
+                    <img src="img/walnut-creek-mobile.jpg" alt="Walnut Creek">
+                  </picture>
                 </div>
                 <div class="cafes__text-wrap">
                   <h3 class="title__third  cafes__article-title">
@@ -426,12 +435,12 @@
           </form>
         </section>
       </main>
-      <footer class="main-foooter">
-        <a class="logo  main-foooter__logo" href="#">Coffeeld</a>
-        <p class="main-foooter__wellcoming">
+      <footer class="main-footer">
+        <a class="logo  main-footer__logo" href="#">Coffeeld</a>
+        <p class="main-footer__wellcoming">
           You're welcome to visit our coffee shop and try out the most delicious coffee beverages in the area.
         </p>
-        <nav class="footer-nav">
+        <nav class="footer-nav  main-footer__nav">
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="menu.html">Menu</a>
@@ -462,7 +471,7 @@
             </li>
           </ul>
         </nav>
-        <form class="form  subscribtion-form">
+        <form class="form  subscribtion-form  main-footer__subscription-form">
           <p class="subscribtion-form__inviting">
             Subscribe to get the latest news from us
           </p>
@@ -471,9 +480,11 @@
           </div>
           <button class="btn  subscribtion-form__btn" type="submit">Subscribe</button>
         </form>
-        <div class="copyrights">
+        <div class="copyrights  main-footer__copyrights">
           <p>
-            © Created by <a href="https://weblium.com/">Weblium</a><br>
+            © Created by <a href="https://weblium.com/">Weblium</a>
+          </p>
+          <p>
             All rights Reserved
           </p>
         </div>

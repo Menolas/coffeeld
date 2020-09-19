@@ -9,10 +9,9 @@
 		@include element-style(100%, 100%, transparent);
 		top: 0;
 		left: 0;
-		background-image: url("../img/job-coffeeld.jpg");
+		background-image: url("../img/job-coffeeld-mobile.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: -56px;
 		opacity: 0.6;
 		z-index: -1;
 	}
@@ -29,4 +28,23 @@
 
 .job-index__btn {
 	margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+
+	.job-index {
+		padding: 40px 32px;
+
+		&::before {
+			background-position: center;
+		}
+	}
+
+	.job-index__title {
+		text-align: left;
+	}
+
+	.job-index p {
+		text-align: left;
+	}
 }

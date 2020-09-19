@@ -10,6 +10,8 @@
 
 .menus__list {
 	@include list-style;
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 30px;
 }
 
@@ -79,5 +81,43 @@
     
     .menus__item {
 		height: 100px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.menus {
+		text-align: center;
+	}
+
+	.menus__item {
+		margin-right: 50%;
+		height: 300px;
+		box-sizing: border-box;
+
+		&::before {
+			opacity: 1;
+		}
+	}
+
+	.menus__item-content {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		padding: 70px 28px;
+		width: 100%;
+		height: 100%;
+		background-color: $black;
+		box-sizing: border-box;
+		z-index: 1;
+
+		&::before {
+			@include element-style(100%, 100%, transparent);
+			top: 0;
+			left: 0;
+			background-image: url("../img/dark-background.jpg");
+			opacity: 0.5;
+			z-index: -1;
+		}
 	}
 }

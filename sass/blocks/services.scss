@@ -37,3 +37,30 @@
 	margin-top: 20px;
 	width: 100%;
 }
+
+@media (min-width: 768px) {
+
+	.services {
+		padding: 40px 32px;
+	}
+
+	.services__list {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: repeat(2, 48%);
+		grid-column-gap: 4%;
+	}
+
+	.services__item {
+		margin: 0;
+	}
+
+	.services__picture-wrap {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	.services__item-btn {
+		width: auto;
+	}
+}

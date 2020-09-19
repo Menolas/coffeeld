@@ -10,7 +10,7 @@
 		left: 0;
 	  background-image: url("../img/dark-background.jpg");
 	  background-size: cover;
-	  opacity: 0.7;
+	  opacity: 0.5;
 	  z-index: -1;
 	}
 }
@@ -76,7 +76,28 @@
 
   .cafes__picture-wrap {
     min-height: 180px;
+    max-height: 246px;
+  }
+}
+
+@media (min-width: 768px) {
+
+	.cafes {
+		padding: 40px 32px;
+		text-align: center;
+	}
+
+  .cafes__picture-wrap {
+    min-height: 246px;
     max-height: 321px;
+  }
+
+  .cafes__text-wrap {
+  	text-align: left;
+  }
+
+  .cafes__btn {
+  	width: auto;
   }
 }
 

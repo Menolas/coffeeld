@@ -1,4 +1,4 @@
-.main-foooter {
+.main-footer {
 	position: relative;
 	padding: 40px 16px 20px;
 	color: $white;
@@ -16,13 +16,63 @@
 	}
 }
 
-.main-foooter__wellcoming {
+.main-footer__wellcoming {
 	text-align: center;
 	color: rgb(155, 162, 170);
 }
 
 @media (min-width: 480px) {
-	.main-foooter {
+	.main-footer {
 		padding: 40px 24px 20px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.main-footer {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto auto;
+		grid-row-gap: 30px;
+		padding: 40px 32px;
+	}
+
+	.main-footer__logo {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		margin: 0;
+		text-align: left;
+	}
+
+	.main-footer__wellcoming {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		text-align: left;
+	}
+
+	.main-footer__nav {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 3;
+		grid-row-end: 3;
+	}
+
+	.main-footer__subscription-form {
+    grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 3;
+		grid-row-end: 3;
+		margin: 0;
+	}
+
+	.main-footer__copyrights {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 4;
+		grid-row-end: -1;
 	}
 }

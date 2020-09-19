@@ -1,5 +1,5 @@
 .main-nav {
-margin-bottom: 34px;
+  margin-bottom: 34px;
 	padding: 46px 24px;
 }
 
@@ -10,4 +10,12 @@ margin-bottom: 34px;
 
 .main-nav__link {
 	@include link-style;
+}
+
+@media (min-width: 768px) {
+
+	.main-nav {
+		margin-bottom: 90px;
+		padding: 46px 32px;
+	}
 }

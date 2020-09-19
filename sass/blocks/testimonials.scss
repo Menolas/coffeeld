@@ -51,3 +51,15 @@
 	height: 22px;
 	border-width: 7px;
 }
+
+@media (min-width: 768px) {
+
+	.testimonials {
+		padding: 40px 94px;
+	}
+
+	.testimonials__handlers {
+	  top: 52%;
+	  width: 88%;
+	}
+}
