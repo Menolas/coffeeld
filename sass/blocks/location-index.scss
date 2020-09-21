@@ -19,6 +19,17 @@
 	margin-bottom: 30px;
 }
 
+.location-index__map {
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.location-index__map iframe {
+	width: 100%;
+	min-height: 167px;
+	max-height: 417px;
+}
+
 .location-index__logo {
 	margin-bottom: 30px;
 	font-weight: 400;
@@ -60,5 +71,12 @@
 	width: 20px;
 	height: 20px;
 	fill: rgb(63, 66, 70);
+}
+
+@media (min-width: 768px) {
+
+	.location-index {
+		padding: 40px 32px;
+	}
 }
 

@@ -297,25 +297,27 @@
         </article>
         <section class="testimonials" id="testimonials">
           <h2 class="title__secondary  testimonials__title">Testimonials</h2>
-          <ul class="testimonials__list">
-            <li class="testimonials__item  testimonials__item--active">
-              <span class="testimonials__name">Elisabeth Smith</span>
-              <p>
-                "The beverage quality in this place is outstanding. I come here twice a day, before and after work, to enjoy a cup of freshly brewed delicious coffee. From a simple black coffee to an iced latte, the taste is always exceptional!"
-              </p>
-              <span class="testimonials__date">December 15, 2017</span>
-            </li>
-            <li class="testimonials__item">
-              <span class="testimonials__name">Jack Peterson</span>
-              <p>
-                "I just love this quiet and cozy place! It is conveniently located near my work. Their barista professionally brews the best coffee I have ever drunk. I am used to starting my day with a cup of invigorating and aromatic coffee before my work. Highly recommend!"
-              </p>
-              <span class="testimonials__date">December 10, 2017</span>
-            </li>
-          </ul>
-          <div class="handlers  testimonials__handlers">
-            <span class="handlers__item  handlers__item--left"></span>
-            <span class="handlers__item  handlers__item--right"></span>
+          <div class="testimonials__list-wrap">
+            <ul class="testimonials__list">
+              <li class="testimonials__item  testimonials__item--active">
+                <span class="testimonials__name">Elisabeth Smith</span>
+                <p>
+                  "The beverage quality in this place is outstanding. I come here twice a day, before and after work, to enjoy a cup of freshly brewed delicious coffee. From a simple black coffee to an iced latte, the taste is always exceptional!"
+                </p>
+                <span class="testimonials__date">December 15, 2017</span>
+              </li>
+              <li class="testimonials__item">
+                <span class="testimonials__name">Jack Peterson</span>
+                <p>
+                  "I just love this quiet and cozy place! It is conveniently located near my work. Their barista professionally brews the best coffee I have ever drunk. I am used to starting my day with a cup of invigorating and aromatic coffee before my work. Highly recommend!"
+                </p>
+                <span class="testimonials__date">December 10, 2017</span>
+              </li>
+            </ul>
+            <div class="handlers  testimonials__handlers">
+              <span class="handlers__item  handlers__item--left"></span>
+              <span class="handlers__item  handlers__item--right"></span>
+            </div>
           </div>
         </section>
         <section class="job-index">
@@ -330,40 +332,47 @@
         </section>
         <section class="gallery-index">
           <h2 class="title__secondary  gallery-index__title">Gallery</h2>
-          <div class="handlers  gallery-index__handlers">
-            <span class="handlers__item  handlers__item--left"></span>
-            <span class="handlers__item  handlers__item--right"></span>
+          <div class="gallery-index__big-picture-container">
+            <img src="img/gallery-index/illustr-1-mobile.jpg" alt="Illustration">
           </div>
-          <ul class="gallery-index__list">
-            <li class="gallery-index__item  gallery-index__item--active">
-              <img src="img/gallery-index/illustr-1-mobile.jpg" alt="gallery Illustration">
-            </li>
-            <li class="gallery-index__item">
-              <img src="img/gallery-index/illustr-2-mobile.jpg" alt="gallery Illustration">
-            </li>
-            <li class="gallery-index__item">
-              <img src="img/gallery-index/illustr-3-mobile.jpg" alt="gallery Illustration">
-            </li>
-            <li class="gallery-index__item">
-              <img src="img/gallery-index/illustr-4-mobile.jpg" alt="gallery Illustration">
-            </li>
-            <li class="gallery-index__item">
-              <img src="img/gallery-index/illustr-5-mobile.jpg" alt="gallery Illustration">
-            </li>
-            <li class="gallery-index__item">
-              <img src="img/gallery-index/illustr-6-mobile.jpg" alt="gallery Illustration">
-            </li>
-            <li class="gallery-index__item">
-              <img src="img/gallery-index/illustr-7-mobile.jpg" alt="gallery Illustration">
-            </li>
-          </ul>
+          <div class="gallery-index__list-wrap">
+            <div class="handlers  gallery-index__handlers">
+              <span class="handlers__item  handlers__item--left"></span>
+              <span class="handlers__item  handlers__item--right"></span>
+            </div>
+            <ul class="gallery-index__list">
+              <li class="gallery-index__item  gallery-index__item--active">
+                <img src="img/gallery-index/illustr-1-mobile.jpg" alt="gallery Illustration">
+              </li>
+              <li class="gallery-index__item">
+                <img src="img/gallery-index/illustr-2-mobile.jpg" alt="gallery Illustration">
+              </li>
+              <li class="gallery-index__item">
+                <img src="img/gallery-index/illustr-3-mobile.jpg" alt="gallery Illustration">
+              </li>
+              <li class="gallery-index__item">
+                <img src="img/gallery-index/illustr-4-mobile.jpg" alt="gallery Illustration">
+              </li>
+              <li class="gallery-index__item">
+                <img src="img/gallery-index/illustr-5-mobile.jpg" alt="gallery Illustration">
+              </li>
+              <li class="gallery-index__item">
+                <img src="img/gallery-index/illustr-6-mobile.jpg" alt="gallery Illustration">
+              </li>
+              <li class="gallery-index__item">
+                <img src="img/gallery-index/illustr-7-mobile.jpg" alt="gallery Illustration">
+              </li>
+            </ul>
+          </div>
           <a class="btn  btn--framed  gallery-index__btn" href="gallery.html">
             View full gallery
           </a>
         </section>
         <section class="location-index">
           <h2 class="title__secondary  location-index__title">Location</h2>
-          <div class="map"></div>
+          <div class="map  location-index__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.9967849475704!2d-74.0405519725062!3d40.630165579340996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24ff18c3fc6d5%3A0x1b933ab31b1e1a4c!2s8020%20Shore%20Rd%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sno!4v1600606796002!5m2!1sen!2sno" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
           <a class="logo  location-index__logo" href="#">Coffeeld</a>
           <div class="location-index__element">
             <span class="location-index__element-name">Address</span>
@@ -490,5 +499,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

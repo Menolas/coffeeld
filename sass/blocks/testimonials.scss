@@ -1,15 +1,19 @@
 .testimonials {
 	position: relative;
 	padding: 40px 16px;
-	padding-bottom: 110px;
 }
 
 .testimonials__title {
 	margin-bottom: 30px;
 }
 
+.testimonials__list-wrap {
+	position: relative;
+}
+
 .testimonials__list {
 	@include list-style;
+	padding-bottom: 70px;
 }
 
 .testimonials__name {
@@ -42,7 +46,8 @@
 }
 
 .testimonials__handlers {
-  top: 80%;
+  top: unset;
+  bottom: 0;
   width: 25%;
 }
 
@@ -59,7 +64,7 @@
 	}
 
 	.testimonials__handlers {
-	  top: 52%;
-	  width: 88%;
+	  top: 47%;
+	  width: 112%;
 	}
 }
