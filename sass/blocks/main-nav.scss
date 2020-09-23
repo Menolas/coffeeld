@@ -3,9 +3,27 @@
 	padding: 46px 24px;
 }
 
+.main-nav--mobile {
+	padding-bottom: 70px;
+	color: $titles-color;
+	background-color: $white;
+}
+
 .main-nav__list {
 	@include list-style;
 	display: none;
+}
+
+.main-nav__list--shown {
+	display: block;
+}
+
+.main-nav__item {
+	margin-bottom: 20px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .main-nav__link {

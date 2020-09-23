@@ -35,8 +35,8 @@
           <p class="header-top__phone">+47(000)6699</p>
         </div>
         <nav class="main-nav">
-          <a class="logo" href="#">Coffeeld</a>
-          <div class="toggler">
+          <a class="logo  main-nav__logo" href="#">Coffeeld</a>
+          <div class="toggler  main-nav__toggler">
             <span class="toggler__element"></span>
           </div>
           <ul class="main-nav__list">
@@ -373,43 +373,45 @@
           <div class="map  location-index__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.9967849475704!2d-74.0405519725062!3d40.630165579340996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24ff18c3fc6d5%3A0x1b933ab31b1e1a4c!2s8020%20Shore%20Rd%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sno!4v1600606796002!5m2!1sen!2sno" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-          <a class="logo  location-index__logo" href="#">Coffeeld</a>
-          <div class="location-index__element">
-            <span class="location-index__element-name">Address</span>
-            <p>
-              8020 Shore Rd.<br>
-              Brooklyn, NY 11209
-            </p>
-          </div>
-          <div class="location-index__element">
-            <span class="location-index__element-name">Phone</span>
-            <span class="location-index__link">+47(000)6699</span>
-          </div>
-          <div class="location-index__element">
-            <span class="location-index__element-name">E-mail</span>
-            <span class="location-index__link">coffeeld@gmail.com</span>
-          </div>
-          <div class="social  location-index__social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg><use xlink:href="img/svg/sprite.svg#facebook"></use></svg>
-                  <span class="visually-hidden">We are in Facebook</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg><use xlink:href="img/svg/sprite.svg#twitter"></use></svg>
-                  <span class="visually-hidden">We are in Twitter</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg><use xlink:href="img/svg/sprite.svg#insta"></use></svg>
-                  <span class="visually-hidden">We are in Instagram</span>
-                </a>
-              </li>
-            </ul>
+          <div class="location-index__inner-wrap">
+            <a class="logo  location-index__logo" href="#">Coffeeld</a>
+            <div class="location-index__element">
+              <span class="location-index__element-name">Address</span>
+              <p>
+                8020 Shore Rd.<br>
+                Brooklyn, NY 11209
+              </p>
+            </div>
+            <div class="location-index__element">
+              <span class="location-index__element-name">Phone</span>
+              <span class="location-index__link">+47(000)6699</span>
+            </div>
+            <div class="location-index__element">
+              <span class="location-index__element-name">E-mail</span>
+              <span class="location-index__link">coffeeld@gmail.com</span>
+            </div>
+            <div class="social  location-index__social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg><use xlink:href="img/svg/sprite.svg#facebook"></use></svg>
+                    <span class="visually-hidden">We are in Facebook</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg><use xlink:href="img/svg/sprite.svg#twitter"></use></svg>
+                    <span class="visually-hidden">We are in Twitter</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg><use xlink:href="img/svg/sprite.svg#insta"></use></svg>
+                    <span class="visually-hidden">We are in Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <section class="reservation" id="reservation">
@@ -499,6 +501,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/main-menu.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

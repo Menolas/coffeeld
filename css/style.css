@@ -318,11 +318,24 @@ textarea {
   margin-bottom: 34px;
   padding: 46px 24px; }
 
+.main-nav--mobile {
+  padding-bottom: 70px;
+  color: #27292b;
+  background-color: white; }
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: none; }
+
+.main-nav__list--shown {
+  display: block; }
+
+.main-nav__item {
+  margin-bottom: 20px; }
+  .main-nav__item:last-of-type {
+    margin-bottom: 0; }
 
 .main-nav__link {
   display: block;
@@ -376,6 +389,16 @@ textarea {
     background-color: white;
     top: 12px;
     left: 0; }
+
+.toggler--cross .toggler__element {
+  background-color: #27292b;
+  transform: rotate(45deg); }
+  .toggler--cross .toggler__element::before {
+    top: unset;
+    background-color: #27292b;
+    transform: rotate(-90deg); }
+  .toggler--cross .toggler__element::after {
+    display: none; }
 
 .menus {
   padding-top: 40px;
@@ -1017,12 +1040,12 @@ textarea {
 
 .location-index__map {
   margin-bottom: 30px;
-  width: 100%; }
+  width: 100%;
+  min-height: 167px; }
 
 .location-index__map iframe {
   width: 100%;
-  min-height: 167px;
-  max-height: 417px; }
+  height: 100%; }
 
 .location-index__logo {
   margin-bottom: 30px;
@@ -1030,10 +1053,12 @@ textarea {
 
 .location-index__element {
   margin-bottom: 20px; }
+  .location-index__element:last-of-type {
+    margin-bottom: 0; }
 
 .location-index__element-name {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
@@ -1060,7 +1085,30 @@ textarea {
 
 @media (min-width: 768px) {
   .location-index {
-    padding: 40px 32px; } }
+    display: grid;
+    grid-template-columns: 66% auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 30px;
+    padding: 40px 32px; }
+  .location-index__title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 1; }
+  .location-index__map {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    margin: 0;
+    height: 352px; }
+  .location-index__inner-wrap {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1; }
+  .location-index__element-name {
+    font-size: 20px; } }
 
 .reservation {
   position: relative;
@@ -1187,7 +1235,7 @@ textarea {
 @media (min-width: 768px) {
   .main-footer {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 65% auto;
     grid-template-rows: auto auto auto auto;
     grid-row-gap: 30px;
     padding: 40px 32px; }
@@ -1208,7 +1256,8 @@ textarea {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 3;
-    grid-row-end: 3; }
+    grid-row-end: 3;
+    padding-top: 30px; }
   .main-footer__subscription-form {
     grid-column-start: 2;
     grid-column-end: -1;
@@ -1263,6 +1312,10 @@ textarea {
 .subscribtion-form__btn {
   margin: 0;
   width: 100%; }
+
+@media (min-width: 768px) {
+  .subscribtion-form__inviting {
+    margin-bottom: 30px; } }
 
 .copyrights {
   padding-top: 30px;

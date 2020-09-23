@@ -22,3 +22,18 @@
 		left: 0;
 	}
 }
+
+.toggler--cross .toggler__element {
+	background-color: $titles-color;
+	transform: rotate(45deg);
+
+	&::before {
+		top: unset;
+		background-color: $titles-color;
+		transform: rotate(-90deg);
+	}
+
+	&::after {
+		display: none;
+	}
+}
