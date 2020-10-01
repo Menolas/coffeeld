@@ -35,3 +35,18 @@
 		font-size: 20px;
 	}
 }
+
+@media (min-width: 1024px) {
+
+	.title {
+		font-size: 92px;
+	}
+
+	.title__secondary {
+		font-size: 28px;
+	}
+
+	.title__third {
+		font-size: 22px;
+	}
+}

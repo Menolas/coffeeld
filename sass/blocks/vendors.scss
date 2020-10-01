@@ -59,3 +59,20 @@
 		min-width: 212px;
 	}
 }
+
+@media (min-width: 992px) {
+
+  .vendors {
+  	padding: 95px 40px;
+  	padding-bottom: 0;
+  }
+
+  .vendors__title {
+  	margin-bottom: 50px;
+  }
+
+  .vendors__text {
+  	margin-bottom: 50px;
+  }
+
+}

@@ -37,3 +37,34 @@
 		padding: 46px 32px;
 	}
 }
+
+@media (min-width: 1024px) {
+
+	.main-nav {
+		margin-bottom: 160px;
+	}
+
+	.main-nav__logo {
+		margin-bottom: 40px;
+		font-size: 40px;
+	}
+  
+  .main-nav__toggler {
+  	display: none;
+  }
+
+  .main-nav__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.main-nav__item {
+		margin-bottom: 0;
+		margin-right: 30px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}

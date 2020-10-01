@@ -50,3 +50,18 @@
 		font-size: 26px;
 	}
 }
+
+@media (min-width: 1024px) {
+
+	.main-header {
+		padding-bottom: 220px;
+
+		&::before {
+			background-image: url("../img/header-bg.jpg");
+		}
+	}
+
+	.main-header__btn {
+		margin-top: 50px;
+	}
+}

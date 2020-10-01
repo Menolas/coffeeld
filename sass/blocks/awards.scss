@@ -58,3 +58,23 @@
 		grid-column-gap: 4%;
 	}
 }
+
+@media (min-width: 992px) {
+
+	.awards {
+		padding: 70px 40px 75px;
+	}
+
+	.awards__title {
+		margin-bottom: 50px;
+	}
+
+	.awards__list {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.awards__item {
+		margin-bottom: 0;
+	}
+}

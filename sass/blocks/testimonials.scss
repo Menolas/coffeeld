@@ -68,3 +68,14 @@
 	  width: 112%;
 	}
 }
+
+@media (min-width: 992px) {
+
+	.testimonials {
+		padding: 70px 120px 100px;
+	}
+
+	.testimonials__handlers {
+		width: 105%;
+	}
+}

@@ -101,3 +101,53 @@
   }
 }
 
+@media (min-width: 992px) {
+
+	.cafes {
+    padding: 95px 32px;
+	}
+
+	.cafes__title {
+		margin-bottom: 50px;
+	}
+
+	.cafes__list {
+		margin: 0 auto;
+		min-width: 962px;
+		max-width: 1170px;
+	}
+
+	.cafes__item {
+		margin-bottom: 0;
+	}
+
+	.cafes__article {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.cafes__picture-wrap {
+		min-height: 340px;
+		max-height: 340px;
+		width: 50%;
+	}
+
+	.cafes__text-wrap {
+		padding: 50px;
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	.cafes__item:nth-of-type(even) .cafes__article {
+    flex-direction: row-reverse;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.cafes {
+		padding: 95px 40px;
+	}
+}
+

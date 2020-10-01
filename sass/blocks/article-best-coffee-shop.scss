@@ -36,6 +36,8 @@
 		grid-column-end: -1;
 		grid-row-start: 1;
 		grid-row-end: 1;
+		justify-self: center;
+		width: 70%;
 		text-align: center;
 	}
 
@@ -64,6 +66,36 @@
 		align-self: end;
 		justify-self: left;
 		margin-top: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.article-best-coffee-shop {
+		padding: 95px 40px 75px;
+	}
+
+	.article-best-coffee-shop__picture-wrap {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: -1;
+	}
+
+	.article-best-coffee-shop__title {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		justify-self: unset;
+		align-self: end;
+		margin-bottom: 25px;
+		width: 100%;
+		text-align: left;
+	}
+
+	.article-best-coffee-shop__btn {
+		align-self: start;
 	}
 }
 

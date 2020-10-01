@@ -64,3 +64,14 @@
 		width: auto;
 	}
 }
+
+@media (min-width: 992px) {
+
+	.services {
+		padding: 95px 40px;
+	}
+
+	.services__title {
+		margin-bottom: 50px;
+	}
+}

@@ -36,3 +36,18 @@
 		text-align: center;
 	}
 }
+
+@media (min-width: 992px) {
+
+	.about {
+		padding: 95px 40px;
+	}
+
+	.about__picture-wrap {
+		margin-bottom: 50px;
+	}
+
+	.about__title {
+		margin-bottom: 50px;
+	}
+}
