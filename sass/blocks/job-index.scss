@@ -33,15 +33,18 @@
 @media (min-width: 768px) {
 
 	.job-index {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
 		padding: 40px 32px;
 
 		&::before {
 			background-position: center;
 		}
+	}
+
+	.job-index__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.job-index__title {

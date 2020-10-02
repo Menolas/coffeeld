@@ -24,11 +24,14 @@
 @media (min-width: 768px) {
 
 	.article-best-coffee-shop {
+		padding: 40px 32px;
+	}
+
+	.article-best-coffee-shop__container {
 		display: grid;
 		grid-template-columns: repeat(2, 48%);
 		grid-column-gap: 4%;
 		grid-template-rows: auto auto auto;
-		padding: 40px 32px;
 	}
 
 	.article-best-coffee-shop__title {
