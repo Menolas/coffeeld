@@ -51,6 +51,7 @@
 		grid-column-end: 1;
 		grid-row-start: 2;
 		grid-row-end: 2;
+		width: 282px;
 		text-align: left;
 	}
 
@@ -74,6 +75,42 @@
 		grid-column-start: 1;
 		grid-column-end: -1;
 		grid-row-start: 4;
+		grid-row-end: -1;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.main-footer {
+		grid-template-columns: 22% auto 25%;
+		grid-template-rows: auto auto auto;
+		grid-row-gap: 0;
+		padding: 50px 40px 20px;
+	}
+
+	.main-footer__wellcoming {
+		width: unset;
+		min-width: 198px;
+	}
+
+	.main-footer__nav {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
+
+  .main-footer__subscription-form {
+    grid-column-start: 3;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: -2;
+	}
+
+	.main-footer__copyrights {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 3;
 		grid-row-end: -1;
 	}
 }

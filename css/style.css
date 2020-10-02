@@ -1116,13 +1116,24 @@ textarea {
 
 @media (min-width: 768px) {
   .job-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 40px 32px; }
     .job-index::before {
       background-position: center; }
   .job-index__title {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 20px; }
   .job-index p {
-    text-align: left; } }
+    text-align: left; }
+  .job-index__btn {
+    margin: 0; } }
+
+@media (min-width: 992px) {
+  .job-index {
+    padding: 100px 40px; } }
 
 .gallery-index {
   position: relative;
@@ -1177,10 +1188,26 @@ textarea {
     width: auto;
     min-height: 67px; }
   .gallery-index__item img {
-    min-height: 67px; } }
+    min-height: 67px; }
+  .gallery-index__handlers {
+    width: 95%; } }
 
-.gallery-index__handlers {
-  width: 95%; }
+@media (min-width: 992px) {
+  .gallery-index {
+    padding: 95px 40px 75px; }
+  .gallery-index__title {
+    margin-bottom: 50px; }
+  .gallery-index__big-picture-container {
+    margin-bottom: 50px;
+    min-height: 392px; }
+  .gallery-index__item {
+    min-height: 129px; }
+  .gallery-index__item img {
+    min-height: 129px; }
+  .gallery-index__list {
+    margin: 0 100px; }
+  .gallery-index__btn {
+    margin-top: 50px; } }
 
 .location-index {
   position: relative;
@@ -1276,6 +1303,14 @@ textarea {
   .location-index__element-name {
     font-size: 20px; } }
 
+@media (min-width: 992px) {
+  .location-index {
+    padding: 75px 40px 95px; }
+  .location-index__title {
+    margin-bottom: 50px; }
+  .location-index__map {
+    height: 346px; } }
+
 .reservation {
   position: relative;
   padding: 40px 0;
@@ -1297,9 +1332,13 @@ textarea {
     opacity: 0.7;
     z-index: -1; }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .reservation {
-    padding: 40px 84px; } }
+    padding: 40px 10px; } }
+
+@media (min-width: 992px) {
+  .reservation {
+    padding: 100px 0; } }
 
 .form__input-wrap {
   position: relative;
@@ -1326,7 +1365,9 @@ textarea {
   resize: none; }
 
 .reservation-form {
+  margin: 0 auto;
   padding: 60px 40px 70px;
+  max-width: 671px;
   background-color: white; }
 
 .reservation-form__title {
@@ -1334,7 +1375,8 @@ textarea {
 
 .reservation-form p {
   margin-bottom: 30px;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
 
 .reservation-form .form__select-arrow {
   position: absolute;
@@ -1368,7 +1410,15 @@ textarea {
 
 @media (min-width: 768px) {
   .reservation-form {
-    padding: 60px 80px 70px; } }
+    padding: 60px 80px 70px;
+    max-height: unset;
+    width: 440px; }
+  .reservation-form__title {
+    margin-bottom: 30px; } }
+
+@media (min-width: 992px) {
+  .reservation-form__title {
+    margin-bottom: 15px; } }
 
 .main-footer {
   position: relative;
@@ -1417,6 +1467,7 @@ textarea {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
+    width: 282px;
     text-align: left; }
   .main-footer__nav {
     grid-column-start: 1;
@@ -1434,6 +1485,31 @@ textarea {
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: 4;
+    grid-row-end: -1; } }
+
+@media (min-width: 992px) {
+  .main-footer {
+    grid-template-columns: 22% auto 25%;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 0;
+    padding: 50px 40px 20px; }
+  .main-footer__wellcoming {
+    width: unset;
+    min-width: 198px; }
+  .main-footer__nav {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2; }
+  .main-footer__subscription-form {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -2; }
+  .main-footer__copyrights {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
     grid-row-end: -1; } }
 
 .footer-nav {
@@ -1464,6 +1540,11 @@ textarea {
     grid-template-columns: repeat(3, 33%); }
   .footer-nav__link {
     text-align: left; } }
+
+@media (min-width: 992px) {
+  .footer-nav {
+    margin-left: 30px;
+    padding: 0; } }
 
 .subscribtion-form {
   margin-bottom: 30px; }
@@ -1502,4 +1583,9 @@ textarea {
   .copyrights {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    font-size: 13px; } }
+
+@media (min-width: 992px) {
+  .copyrights {
+    font-size: 14px; } }

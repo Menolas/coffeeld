@@ -71,8 +71,41 @@
 	.gallery-index__item img {
 		min-height: 67px;
 	}
+
+	.gallery-index__handlers {
+		width: 95%;
+	}
 }
 
-.gallery-index__handlers {
-	width: 95%;
+@media (min-width: 992px) {
+	.gallery-index {
+		padding: 95px 40px 75px;
+	}
+
+	.gallery-index__title {
+		margin-bottom: 50px;
+	}
+
+	.gallery-index__big-picture-container {
+		margin-bottom: 50px;
+		min-height: 392px;
+	}
+
+	.gallery-index__item {
+		min-height: 129px;
+	}
+
+	.gallery-index__item img {
+		min-height: 129px;
+	}
+
+	.gallery-index__list {
+		margin: 0 100px;
+	}
+
+	.gallery-index__btn {
+		margin-top: 50px;
+	}
 }
+
+

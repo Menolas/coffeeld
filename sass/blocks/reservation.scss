@@ -17,9 +17,16 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
 
 	.reservation {
-    padding: 40px 84px;
+    padding: 40px 10px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.reservation {
+		padding: 100px 0;
 	}
 }

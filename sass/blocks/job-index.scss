@@ -33,6 +33,10 @@
 @media (min-width: 768px) {
 
 	.job-index {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 		padding: 40px 32px;
 
 		&::before {
@@ -42,9 +46,21 @@
 
 	.job-index__title {
 		text-align: left;
+		margin-bottom: 20px;
 	}
 
 	.job-index p {
 		text-align: left;
+	}
+
+	.job-index__btn {
+		margin: 0;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.job-index {
+		padding: 100px 40px;
 	}
 }

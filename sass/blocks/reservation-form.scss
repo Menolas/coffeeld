@@ -1,5 +1,7 @@
 .reservation-form {
+	margin: 0 auto;
 	padding: 60px 40px 70px;
+	max-width: 671px;
 	background-color: $white;
 }
 
@@ -10,6 +12,7 @@
 .reservation-form p {
 	margin-bottom: 30px;
 	text-align: center;
+	font-size: 18px;
 }
 
 .reservation-form  .form__select-arrow {
@@ -46,5 +49,18 @@
 
 	.reservation-form {
     padding: 60px 80px 70px;
+    max-height: unset;
+    width: 440px;
+	}
+
+	.reservation-form__title {
+		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.reservation-form__title {
+		margin-bottom: 15px;
 	}
 }
