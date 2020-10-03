@@ -1,0 +1,12 @@
+.menu-subps {
+	@include list-style;
+	margin-top: 60px;
+}
+
+.menu-subps__item {
+	display: none;
+}
+
+.menu-subps__item--active {
+	display: block;
+}

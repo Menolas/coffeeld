@@ -62,7 +62,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -88,9 +88,7 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  margin: 0; }
-
+h4,
 p {
   margin: 0; }
 
@@ -102,18 +100,9 @@ input,
 textarea {
   box-sizing: border-box; }
 
-@media (min-width: 768px) {
-  body {
-    font-size: 12px;
-    line-height: 18px; } }
-
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-    line-height: 1.5; } }
-
 .container {
   margin: 0 auto;
+  padding: 0 16px;
   max-width: 1170px; }
 
 .title {
@@ -204,13 +193,17 @@ textarea {
   opacity: 0.6; }
 
 .main-header {
+  padding-bottom: 20px;
+  color: #27292b; }
+
+.main-header--index {
   position: relative;
   padding-bottom: 60px;
   text-align: center;
   color: white;
   background-color: black;
   z-index: 1; }
-  .main-header::before {
+  .main-header--index::before {
     content: "";
     display: block;
     position: absolute;
@@ -225,6 +218,16 @@ textarea {
     background-repeat: no-repeat;
     opacity: 0.6;
     z-index: -1; }
+
+.main-header--index .toggler__element {
+  background-color: white; }
+  .main-header--index .toggler__element::before {
+    background-color: white; }
+  .main-header--index .toggler__element::after {
+    background-color: white; }
+
+.main-header__title {
+  margin-top: 80px; }
 
 .main-header__moto {
   margin-top: 15px;
@@ -259,7 +262,8 @@ textarea {
 
 .header-top {
   position: relative;
-  padding: 6px 16px;
+  padding: 6px 0;
+  color: white;
   background-color: black;
   z-index: 1; }
   .header-top::before {
@@ -348,14 +352,14 @@ textarea {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: white; }
+  background-color: black; }
   .toggler__element::before {
     content: "";
     display: block;
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: white;
+    background-color: black;
     top: 6px;
     left: 0; }
   .toggler__element::after {
@@ -364,7 +368,7 @@ textarea {
     position: absolute;
     width: 24px;
     height: 2px;
-    background-color: white;
+    background-color: black;
     top: 12px;
     left: 0; }
 
@@ -379,8 +383,7 @@ textarea {
     display: none; }
 
 .main-nav {
-  margin-bottom: 34px;
-  padding: 46px 24px; }
+  padding: 46px 8px 0; }
 
 .main-nav--mobile {
   padding-bottom: 70px;
@@ -433,6 +436,9 @@ textarea {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: white; }
+
+.menus__container {
+  padding: 0; }
 
 .menus__title {
   margin-bottom: 30px; }
@@ -563,7 +569,7 @@ textarea {
 
 .cafes {
   position: relative;
-  padding: 40px 16px;
+  padding: 40px 0;
   background-color: black;
   z-index: 1; }
   .cafes::before {
@@ -678,7 +684,7 @@ textarea {
     padding: 95px 40px; } }
 
 .vendors {
-  padding: 40px 16px; }
+  padding: 40px 0; }
 
 .vendors__title {
   margin-bottom: 8px; }
@@ -741,7 +747,7 @@ textarea {
     flex: 1; } }
 
 .services {
-  padding: 40px 16px; }
+  padding: 40px 0; }
 
 .services__title {
   margin-bottom: 30px; }
@@ -805,7 +811,7 @@ textarea {
 
 .present-list {
   position: relative;
-  padding: 40px 16px;
+  padding: 40px 0;
   color: white;
   background-color: black;
   z-index: 1; }
@@ -857,7 +863,7 @@ textarea {
     padding: 110px 40px 105px; } }
 
 .about {
-  padding: 40px 16px; }
+  padding: 40px 0; }
 
 .about__picture-wrap {
   margin-bottom: 30px;
@@ -894,7 +900,7 @@ textarea {
 
 .awards {
   position: relative;
-  padding: 40px 16px;
+  padding: 40px 0;
   color: white;
   background-color: black;
   z-index: 1; }
@@ -958,7 +964,7 @@ textarea {
     margin-bottom: 0; } }
 
 .article-best-coffee-shop {
-  padding: 40px 16px; }
+  padding: 40px 0; }
 
 .article-best-coffee-shop__title {
   margin-bottom: 30px;
@@ -1036,7 +1042,7 @@ textarea {
 
 .testimonials {
   position: relative;
-  padding: 40px 16px; }
+  padding: 40px 0; }
 
 .testimonials__title {
   margin-bottom: 30px; }
@@ -1099,7 +1105,7 @@ textarea {
 
 .job-index {
   position: relative;
-  padding: 40px 16px;
+  padding: 40px 0;
   color: white;
   background-color: black;
   z-index: 1; }
@@ -1153,6 +1159,9 @@ textarea {
 .gallery-index {
   position: relative;
   padding: 40px 0; }
+
+.gallery-index__container {
+  padding: 0; }
 
 .gallery-index__title {
   margin-bottom: 30px; }
@@ -1226,7 +1235,7 @@ textarea {
 
 .location-index {
   position: relative;
-  padding: 40px 16px;
+  padding: 40px 0;
   background-color: white;
   z-index: 1; }
   .location-index::before {
@@ -1348,6 +1357,9 @@ textarea {
     opacity: 0.7;
     z-index: -1; }
 
+.reservation__container {
+  padding: 0; }
+
 @media (min-width: 480px) {
   .reservation {
     padding: 40px 10px; } }
@@ -1438,7 +1450,7 @@ textarea {
 
 .main-footer {
   position: relative;
-  padding: 40px 16px 20px;
+  padding: 40px 0 20px;
   color: white;
   background-color: black;
   z-index: 1; }
@@ -1607,3 +1619,63 @@ textarea {
 @media (min-width: 992px) {
   .copyrights {
     font-size: 14px; } }
+
+.menu-page {
+  background-image: url("../img/light-background.jpg");
+  background-repeat: no-repeat; }
+
+.menu-page__title {
+  margin-bottom: 40px;
+  padding: 40px 0 40px;
+  background-image: url("../img/menu-page-title-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.menu-page_introducing {
+  text-align: center; }
+
+.menu-slider {
+  margin-top: 35px; }
+
+.menu-slider-buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.menu-slider-buttons__item {
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 700; }
+
+.menu-slider-buttons__item--active {
+  color: #27292b;
+  text-decoration: underline; }
+
+.menu-subps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 60px; }
+
+.menu-subps__item {
+  display: none; }
+
+.menu-subps__item--active {
+  display: block; }
+
+.menu-articles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+
+.menu-articles__item {
+  margin-bottom: 30px;
+  padding: 50px 40px;
+  background-color: white; }
+  .menu-articles__item:last-of-type {
+    margin-bottom: 0; }

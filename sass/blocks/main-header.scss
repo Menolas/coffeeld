@@ -1,4 +1,9 @@
 .main-header {
+	padding-bottom: 20px;
+  color: $titles-color;
+}
+
+.main-header--index {
 	position: relative;
 	padding-bottom: 60px;
 	text-align: center;
@@ -17,6 +22,22 @@
 		opacity: 0.6;
 		z-index: -1;
 	}
+}
+
+.main-header--index .toggler__element {
+	background-color: $white;
+
+	&::before {
+		background-color: $white;
+	}
+
+	&::after {
+		background-color: $white;
+	}
+}
+
+.main-header__title {
+	margin-top: 80px;
 }
 
 .main-header__moto {

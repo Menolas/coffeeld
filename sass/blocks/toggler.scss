@@ -8,16 +8,16 @@
 	display: block;
 	width: 24px;
 	height: 2px;
-	background-color: $white;
+	background-color: $black;
 
 	&::before {
-		@include element-style(24px, 2px, $white);
+		@include element-style(24px, 2px, $black);
 		top: 6px;
 		left: 0;
 	}
 
 	&::after {
-		@include element-style(24px, 2px, $white);
+		@include element-style(24px, 2px, $black);
 		top: 12px;
 		left: 0;
 	}

@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   @include font-base ($base-font-size, $base-line-height);
   color: $text-on-white;
   background-color: $white;
@@ -32,10 +32,7 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  margin: 0;
-}
-
+h4,
 p {
   margin: 0;
 }
@@ -48,18 +45,4 @@ img {
 input,
 textarea {
   box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-  body {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-  }
 }

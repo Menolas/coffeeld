@@ -1,0 +1,15 @@
+.menu-articles {
+	@include list-style;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-articles__item {
+	margin-bottom: 30px;
+	padding: 50px 40px;
+	background-color: $white;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

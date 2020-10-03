@@ -1,0 +1,17 @@
+.menu-slider-buttons {
+	@include list-style;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.menu-slider-buttons__item {
+	margin-right: 30px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.menu-slider-buttons__item--active {
+	color: $titles-color;
+	text-decoration: underline;
+}
