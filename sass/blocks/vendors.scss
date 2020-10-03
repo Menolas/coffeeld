@@ -63,7 +63,7 @@
 @media (min-width: 992px) {
 
   .vendors {
-  	padding: 95px 40px;
+  	padding: 95px 40px 70px;
   	padding-bottom: 0;
   }
 
@@ -75,4 +75,16 @@
   	margin-bottom: 50px;
   }
 
+}
+
+@media (min-width: 1200px) {
+
+	.vendors__list {
+    display: flex;
+    flex-direction: row;
+	}
+
+	.vendors__item {
+		flex: 1;
+	}
 }

@@ -68,10 +68,24 @@
 @media (min-width: 992px) {
 
 	.services {
-		padding: 95px 40px;
+		padding: 75px 40px 95px;
 	}
 
 	.services__title {
 		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.services__item {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.services__picture-wrap {
+		margin-bottom: 0;
+		margin-right: 30px;
+		min-width: 285px;
 	}
 }

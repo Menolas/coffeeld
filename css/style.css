@@ -113,7 +113,8 @@ textarea {
     line-height: 1.5; } }
 
 .container {
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1170px; }
 
 .title {
   text-align: center;
@@ -221,6 +222,7 @@ textarea {
     background-image: url("../img/header-bg-mobile.jpg");
     background-size: cover;
     background-position: center 30px;
+    background-repeat: no-repeat;
     opacity: 0.6;
     z-index: -1; }
 
@@ -257,10 +259,6 @@ textarea {
 
 .header-top {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 6px 16px;
   background-color: black;
   z-index: 1; }
@@ -277,6 +275,12 @@ textarea {
     background-size: cover;
     opacity: 0.5;
     z-index: -1; }
+
+.header-top__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
 
 .header-top__social .social__list {
   flex-direction: row; }
@@ -722,12 +726,19 @@ textarea {
 
 @media (min-width: 992px) {
   .vendors {
-    padding: 95px 40px;
+    padding: 95px 40px 70px;
     padding-bottom: 0; }
   .vendors__title {
     margin-bottom: 50px; }
   .vendors__text {
     margin-bottom: 50px; } }
+
+@media (min-width: 1200px) {
+  .vendors__list {
+    display: flex;
+    flex-direction: row; }
+  .vendors__item {
+    flex: 1; } }
 
 .services {
   padding: 40px 16px; }
@@ -779,9 +790,18 @@ textarea {
 
 @media (min-width: 992px) {
   .services {
-    padding: 95px 40px; }
+    padding: 75px 40px 95px; }
   .services__title {
     margin-bottom: 50px; } }
+
+@media (min-width: 1280px) {
+  .services__item {
+    display: flex;
+    flex-direction: row; }
+  .services__picture-wrap {
+    margin-bottom: 0;
+    margin-right: 30px;
+    min-width: 285px; } }
 
 .present-list {
   position: relative;
