@@ -13,3 +13,17 @@
 		margin-bottom: 0;
 	}
 }
+
+.menu-articles__item-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 15px;
+}
+
+.menu-articles__article-price {
+	font-size: 18px;
+	font-weight: 700;
+	color: $titles-color;
+}

@@ -1621,8 +1621,24 @@ textarea {
     font-size: 14px; } }
 
 .menu-page {
-  background-image: url("../img/light-background.jpg");
-  background-repeat: no-repeat; }
+  position: relative;
+  padding-bottom: 40px;
+  background-color: white;
+  z-index: 1; }
+  .menu-page::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/light-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1; }
 
 .menu-page__title {
   margin-bottom: 40px;
@@ -1634,8 +1650,16 @@ textarea {
 .menu-page_introducing {
   text-align: center; }
 
+.menu-page__btn {
+  margin: 0;
+  width: 100%; }
+
+.menu-page .btn--framed {
+  margin-bottom: 20px; }
+
 .menu-slider {
-  margin-top: 35px; }
+  margin-top: 35px;
+  margin-bottom: 30px; }
 
 .menu-slider-buttons {
   margin: 0;
@@ -1679,3 +1703,15 @@ textarea {
   background-color: white; }
   .menu-articles__item:last-of-type {
     margin-bottom: 0; }
+
+.menu-articles__item-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px; }
+
+.menu-articles__article-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #27292b; }

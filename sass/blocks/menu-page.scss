@@ -1,6 +1,19 @@
 .menu-page {
+	position: relative;
+	padding-bottom: 40px;
+	background-color: $white;
+	z-index: 1;
+
+	&::before {
+	@include element-style(100%, 100%, transparent);
+	top: 0;
+	left: 0;
 	background-image: url("../img/light-background.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.3;
+	z-index: -1;
+  }
 }
 
 .menu-page__title {
@@ -13,4 +26,13 @@
 
 .menu-page_introducing {
 	text-align: center;
+}
+
+.menu-page__btn {
+	margin: 0;
+	width: 100%;
+}
+
+.menu-page .btn--framed {
+	margin-bottom: 20px;
 }
