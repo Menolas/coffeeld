@@ -9,47 +9,60 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#">We are in Facebook</a>
-            </li>
-            <li class="social__item">
-              <a href="#">We are in Twitter</a>
-            </li>
-            <li class="social__item">
-              <a href="#">We are in Instagram</a>
-            </li>
-          </ul>
+          <div class="container  header-top__container">
+            <div class="social  header-top__social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg><use xlink:href="img/svg/sprite.svg#facebook"></use></svg>
+                    <span class="visually-hidden">We are in Facebook</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg><use xlink:href="img/svg/sprite.svg#twitter"></use></svg>
+                    <span class="visually-hidden">We are in Twitter</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg><use xlink:href="img/svg/sprite.svg#insta"></use></svg>
+                    <span class="visually-hidden">We are in Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="header-top__phone">+47(000)6699</p>
+          </div>
         </div>
-        <p class="header-top__phone">+47(000)6699</p>
+        <div class="container">
+        <nav class="main-nav">
+            <a class="logo  main-nav__logo" href="index.html">Coffeeld</a>
+            <div class="toggler  main-nav__toggler">
+              <span class="toggler__element"></span>
+            </div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="menu.html">Menu</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Location</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">About</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="job.html">Job</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
       </div>
-      <nav class="main-nav">
-        <a class="logo" href="index.html"><h2 class="main-nav__title">Coffeeld</h2></a>
-        <div class="toggler">
-          <span></span>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="menu.html">Menu</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Location</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="about.html">About</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="job.html">Job</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="contacts.html">Contacts</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="locations">
@@ -177,62 +190,62 @@
         <a class="btn  locations__btn" href="index.html#reservation">Book a table</a>
       </section>
     </main>
-    <footer class="main-foooter">
-      <section class="footer-menu">
-        <h2 class="title__secondary  footer-menu__title">Coffeeld</h2>
-        <p>
-          You're welcome to visit our coffee shop and try out the most delicious coffee beverages in the area.
-        </p>
-        <nav class="footer-nav">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="menu.html">Menu</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="locations.html">Locations</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="about.html">About</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="job.html">Job</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#awards">Awards</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#menus">Press</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="contacts.html">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section class="subscribtion">
-        <p>
-          Subscribe to get the latest news from us
-        </p>
-        <form class="form  subscribtion-form">
-          <div class="form__input-wrap">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+    <footer class="main-footer">
+        <div class="container  main-footer__container">
+          <a class="logo  main-footer__logo" href="index.html">Coffeeld</a>
+          <p class="main-footer__wellcoming">
+            You're welcome to visit our coffee shop and try out the most delicious coffee beverages in the area.
+          </p>
+          <nav class="footer-nav  main-footer__nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="menu.html">Menu</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Locations</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="about.html">About</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="job.html">Job</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#awards">Awards</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#menus">Press</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="form  subscribtion-form  main-footer__subscription-form">
+            <p class="subscribtion-form__inviting">
+              Subscribe to get the latest news from us
+            </p>
+            <div class="form__input-wrap">
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <button class="btn  subscribtion-form__btn" type="submit">Subscribe</button>
+          </form>
+          <div class="copyrights  main-footer__copyrights">
+            <p>
+              © Created by <a href="https://weblium.com/">Weblium</a>
+            </p>
+            <p>
+              All rights Reserved
+            </p>
           </div>
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
-      <div class="copyrights">
-        <p>
-          © Created by <span>Weblium</span><br>
-          All rights Reserved
-        </p>
-      </div>
-    </footer>
+        </div>
+      </footer>
+    <script src="js/main-menu.js"></script>
   </body>
 </html>
