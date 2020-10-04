@@ -1,4 +1,5 @@
 .main-header {
+	position: relative;
 	padding-bottom: 20px;
   color: $titles-color;
 }
@@ -9,7 +10,7 @@
 	text-align: center;
 	color: $white;
 	background-color: $black;
-	z-index: 1;
+	z-index: 100;
 
 	&::before {
 		@include element-style(100%, 100%, transparent);

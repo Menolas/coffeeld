@@ -152,7 +152,8 @@ textarea {
   font-size: 14px;
   font-family: "Libre Baskerville";
   background-color: #988378;
-  border: none; }
+  border: none;
+  box-sizing: border-box; }
 
 .btn--framed {
   border: 2px solid #ecc9b7;
@@ -193,6 +194,7 @@ textarea {
   opacity: 0.6; }
 
 .main-header {
+  position: relative;
   padding-bottom: 20px;
   color: #27292b; }
 
@@ -202,7 +204,7 @@ textarea {
   text-align: center;
   color: white;
   background-color: black;
-  z-index: 1; }
+  z-index: 100; }
   .main-header--index::before {
     content: "";
     display: block;
@@ -386,9 +388,16 @@ textarea {
   padding: 46px 8px 0; }
 
 .main-nav--mobile {
-  padding-bottom: 70px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  padding: 46px 18px 70px;
   color: #27292b;
-  background-color: white; }
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 200; }
 
 .main-nav__list {
   margin: 0;
@@ -397,7 +406,8 @@ textarea {
   display: none; }
 
 .main-nav__list--shown {
-  display: block; }
+  display: block;
+  text-align: center; }
 
 .main-nav__item {
   margin-bottom: 20px; }
@@ -1620,10 +1630,31 @@ textarea {
   .copyrights {
     font-size: 14px; } }
 
+.inner-page-title {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 40px 0 40px;
+  background-color: black;
+  z-index: 1; }
+  .inner-page-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1; }
+
 .menu-page {
   position: relative;
   padding-bottom: 40px;
   background-color: white;
+  overflow: hidden;
   z-index: 1; }
   .menu-page::before {
     content: "";
@@ -1641,11 +1672,7 @@ textarea {
     z-index: -1; }
 
 .menu-page__title {
-  margin-bottom: 40px;
-  padding: 40px 0 40px;
-  background-image: url("../img/menu-page-title-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: url("../img/menu-page-title-mobile.jpg"); }
 
 .menu-page_introducing {
   text-align: center; }
@@ -1715,3 +1742,31 @@ textarea {
   font-size: 18px;
   font-weight: 700;
   color: #27292b; }
+
+.locations-page {
+  padding-bottom: 40px; }
+
+.locations-page__title::before {
+  background-image: url("../img/location-page-title.jpg"); }
+
+.locations__secondary-title {
+  margin-bottom: 30px; }
+
+.locations__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.locations__item {
+  padding: 30px 20px;
+  border-bottom: 1px solid #e59e79; }
+
+.locations__element {
+  margin-bottom: 20px; }
+
+.locations__header {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700; }

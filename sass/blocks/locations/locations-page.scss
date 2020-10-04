@@ -1,0 +1,10 @@
+.locations-page {
+	padding-bottom: 40px;
+}
+
+.locations-page__title {
+
+	&::before {
+	  background-image: url("../img/location-page-title.jpg");
+	}
+}
