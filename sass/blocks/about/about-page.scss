@@ -1,0 +1,10 @@
+.about-page {
+	padding-bottom: 40px;
+}
+
+.about-page__title {
+
+	&::before {
+    background-image: url("../img/about-page-title.jpg");
+  }
+}
