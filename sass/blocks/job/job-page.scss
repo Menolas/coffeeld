@@ -1,0 +1,10 @@
+.job-page {
+	
+}
+
+.job-page__title {
+
+	&::before {
+		background-image: url("../img/job-page/job-title.jpg");
+	}
+}

@@ -1,0 +1,42 @@
+.benefits {
+	margin-top: 15px;
+}
+
+.benefits__list {
+	@include list-style;
+}
+
+.benefits__item {
+	margin-bottom: 30px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+.benefits__svg-wrap {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: #db7474;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.benefits__item svg {
+	width: 45px;
+	height: 45px;
+	fill: $white;
+	color: $white;
+}
+
+.benefits__item span {
+	display: block;
+	text-align: center;
+	color: $titles-color;
+	font-size: 18px;
+	font-weight: 700;
+}
