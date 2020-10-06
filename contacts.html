@@ -64,58 +64,58 @@
           </nav>
       </div>
     </header>
-    <main>
-      <section class="contacts">
-        <h1 class="title  contacts__title">Contacts</h1>
-        <h2 class="title__secondary">Contacts</h2>
-        <p>
-          If you have any questions or want to join our team, feel free to get in touch with us.
-        </p>
-        <div class="contacts-details">
-          <ul class="contacts-details__list">
-            <li class="contacts-details__item">
-              <span class="contacts-details__name">Address</span>
-              <p>
-                8020 Shore Rd.Brooklyn, NY 11209
-              </p>
-            </li>
-            <li class="contacts-details__item">
-              <span class="contacts-details__name">Hours</span>
-              <p>
-                Monday - Saturday:   11 AM - 9 PM<br>
-                Sunday:   11 AM - 7 PM
-              </p>
-            </li>
-            <li class="contacts-details__item">
-              <span class="contacts-details__name">Contacts</span>
-              <p>
-                +1 (234) 567 89 00<br>
-                coffeeld@email.com
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="map"></div>
-      </section>
-      <form class="form  contact-form">
-        <div class="form__input-wrap">
-          <label for="name">Enter your full name*</label>
-          <input type="text" name="name" id="name">
-        </div>
-        <div class="form__input-wrap">
-          <label for="phone">Enter your phone number*</label>
-          <input type="number" name="phone" id="phone">
-        </div>
-        <div class="form__input-wrap">
-          <label for="email">Enter your e-mail*</label>
-          <input type="email" name="email" id="email">
-        </div>
-        <div class="form__input-wrap">
-          <label for="message">Type your message</label>
-          <textarea></textarea>
-        </div>
-        <button type="submit">Request a quote</button>
-      </form>
+    <main class="contacts-page">
+      <h1 class="title  inner-page-title  contacts-page__title">Contacts</h1>
+      <div class="container">
+        <section class="contacts">
+          <h2 class="title__secondary  contacts__title">Contacts</h2>
+          <p class="contacts__intro">
+            If you have any questions or want to join our team, feel free to get in touch with us.
+          </p>
+          <div class="contacts-details">
+            <ul class="contacts-details__list">
+              <li class="contacts-details__item">
+                <h3 class="title__third  contacts-details__name">Address</h3>
+                <p>
+                  8020 Shore Rd.<br>Brooklyn, NY 11209
+                </p>
+              </li>
+              <li class="contacts-details__item">
+                <h3 class="title__third  contacts-details__name">Hours</h3>
+                <p>
+                  Monday - Saturday: 11 AM - 9 PM<br>
+                  Sunday: 11 AM - 7 PM
+                </p>
+              </li>
+              <li class="contacts-details__item  contacts-details__item--phone">
+                <h3 class="title__third  contacts-details__name">Contacts</h3>
+                <p>
+                  +1 (234) 567 89 00<br>
+                  coffeeld@email.com
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.9967849475704!2d-74.0405519725062!3d40.630165579340996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24ff18c3fc6d5%3A0x1b933ab31b1e1a4c!2s8020%20Shore%20Rd%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sno!4v1600606796002!5m2!1sen!2sno" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </section>
+        <form class="form  contacts-form">
+          <div class="form__input-wrap">
+            <input type="text" name="name" id="name" placeholder="Enter your full name*">
+          </div>
+          <div class="form__input-wrap">
+            <input type="number" name="phone" id="phone" placeholder="Enter your phone number*">
+          </div>
+          <div class="form__input-wrap">
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail*">
+          </div>
+          <div class="form__input-wrap">
+            <textarea placeholder="Type your message"></textarea>
+          </div>
+          <button class="btn  contacts-form__btn" type="submit">Request a quote</button>
+        </form>
+      </div>
     </main>
     <footer class="main-footer">
         <div class="container  main-footer__container">

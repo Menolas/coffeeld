@@ -1,0 +1,34 @@
+.contacts-details {
+	margin-bottom: 30px;
+	padding-top: 30px;
+}
+
+.contacts-details__list {
+	@include list-style;
+}
+
+.contacts-details__item {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.contacts-details__item p {
+	text-align: left;
+	font-size: 17px;
+	color: $titles-color;
+}
+
+.contacts-details__name {
+	width: 135px;
+}
+
+.contacts-details__item--phone p {
+	font-weight: 700;
+	color: rgb(229, 157, 117);
+}

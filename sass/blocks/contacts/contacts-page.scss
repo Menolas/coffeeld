@@ -1,0 +1,22 @@
+.contacts-page {
+	position: relative;
+	padding-bottom: 40px;
+	background-color: $white;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+		background-image: url("../img/light-background.jpg");
+		opacity: 0.4;
+	  z-index: -1;
+	}
+}
+
+.contacts-page__title {
+
+	&::before {
+		background-image: url("../img/contact-page-title.jpg");
+	}
+}
