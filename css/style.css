@@ -1176,29 +1176,8 @@ textarea {
 .gallery-index__title {
   margin-bottom: 30px; }
 
-.gallery-index__list-wrap {
-  position: relative; }
-
-.gallery-index__list {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.gallery-index__item {
-  display: none;
-  width: 100%; }
-
-.gallery-index__item--active {
-  display: block; }
-
-.gallery-index__item img {
-  width: 100%; }
-
 .gallery-index__btn {
   margin-top: 30px; }
-
-.gallery-index__big-picture-container {
-  display: none; }
 
 @media (min-width: 768px) {
   .gallery-index {
@@ -1242,6 +1221,27 @@ textarea {
     margin: 0 100px; }
   .gallery-index__btn {
     margin-top: 50px; } }
+
+.gallery-slider__list-wrap {
+  position: relative; }
+
+.gallery-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.gallery-slider__item {
+  display: none;
+  width: 100%; }
+
+.gallery-slider__item--active {
+  display: block; }
+
+.gallery-slider__item img {
+  width: 100%; }
+
+.gallery-slider__big-picture-container {
+  display: none; }
 
 .location-index {
   position: relative;
@@ -1912,3 +1912,72 @@ textarea {
   color: #27292b;
   font-size: 18px;
   font-weight: 700; }
+
+.vacancies {
+  position: relative;
+  padding: 40px 0;
+  color: white;
+  background-color: black;
+  z-index: 1; }
+  .vacancies::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    background-image: url("../img/job-page/vacancies.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1; }
+
+.vacancies__title {
+  margin-bottom: 15px;
+  color: white; }
+
+.vacancies__intro {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px; }
+
+.vacancies__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  background-color: black; }
+
+.vacancies__item {
+  padding: 24px 38px 20px 25px;
+  border-bottom: 1px solid white; }
+
+.vacancies__item-handler svg {
+  width: 18px;
+  height: 10px;
+  fill: white; }
+
+.vacancies__name {
+  margin-bottom: 15px;
+  color: white; }
+
+.vacancies__short-description {
+  color: #9ba2aa;
+  font-size: 12px; }
+
+.vacancies__full-description {
+  display: none; }
+
+.gallery-page__title::before {
+  background-image: url("../img/gallery-page/gallery-title.jpg"); }
+
+.pictures-table {
+  padding-top: 80px; }
+
+.pictures-table__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }

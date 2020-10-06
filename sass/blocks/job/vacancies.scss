@@ -1,0 +1,61 @@
+.vacancies {
+	position: relative;
+	padding: 40px 0;
+	color: $white;
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+		background-image: url("../img/job-page/vacancies.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		opacity: 0.6;
+		z-index: -1;
+	}
+}
+
+.vacancies__title {
+	margin-bottom: 15px;
+	color: $white;
+}
+
+.vacancies__intro {
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.vacancies__list {
+	@include list-style;
+	margin-bottom: 30px;
+	background-color: $black;
+}
+
+.vacancies__item {
+	padding: 24px 38px 20px 25px;
+	border-bottom: 1px solid $white;
+}
+
+.vacancies__item-handler svg {
+  width: 18px;
+  height: 10px;
+  fill: $white;
+}
+
+.vacancies__name {
+	margin-bottom: 15px;
+	color: $white;
+}
+
+.vacancies__short-description {
+	color: #9ba2aa;
+	font-size: 12px;
+}
+
+.vacancies__full-description {
+	display: none;
+}

@@ -1,0 +1,24 @@
+.gallery-slider__list-wrap {
+	position: relative;
+}
+
+.gallery-slider__list {
+	@include list-style;
+}
+
+.gallery-slider__item {
+	display: none;
+	width: 100%;
+}
+
+.gallery-slider__item--active {
+	display: block;
+}
+
+.gallery-slider__item img {
+	width: 100%;
+}
+
+.gallery-slider__big-picture-container {
+	display: none;
+}

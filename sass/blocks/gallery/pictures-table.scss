@@ -1,0 +1,21 @@
+.pictures-table {
+	padding-top: 80px;
+}
+
+.pictures-table__list {
+	@include list-style;
+}
+
+.pictures-table__item {
+	margin-bottom: 30px;
+	width: 100%;
+
+	&:last-of-type {
+		margin-bottom: 0;
+}
+
+.pictures-table__item img {
+	width: 100%;
+}
+
+
