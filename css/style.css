@@ -2042,9 +2042,8 @@ textarea {
 
 .contacts-details__item {
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start; }
+  display: grid;
+  grid-template-columns: 150px auto; }
   .contacts-details__item:last-of-type {
     margin-bottom: 0; }
 
@@ -2053,12 +2052,10 @@ textarea {
   font-size: 17px;
   color: #27292b; }
 
-.contacts-details__name {
-  width: 135px; }
-
 .contacts-details__item--phone p {
   font-weight: 700;
-  color: #e59d75; }
+  color: #e59d75;
+  text-decoration: underline; }
 
 .contacts-form {
   margin-top: 30px;

@@ -31,25 +31,33 @@ if (screen.width < 768) {
 
 	handler_fw.addEventListener('click', function () {
 	    var index = searchActiveItem();
+	    var newIndex;
 	    if (index < slider_elements.length -1) {
+	    	newIndex = index + 1;
 	    	slider_elements[index].classList.remove('gallery-slider__item--active');
-	    	var newIndex = index + 1;
 	    	slider_elements[newIndex].classList.add('gallery-slider__item--active');
-	    	if (newIndex === slider_elements.length - 1) {
-	    		handler_fw.classList.add('handlers__item--disabled')
-	    	}
+	    }
+
+	    if (index === slider_elements.length - 1) {
+	    	newIndex = 0;
+	    	slider_elements[index].classList.remove('gallery-slider__item--active');
+	    	slider_elements[newIndex].classList.add('gallery-slider__item--active');
 	    }
 	});
 
 	handler_bk.addEventListener('click', function () {
 		var index = searchActiveItem();
+		var newIndex;
 		if (index > 0) {
+			newIndex = index - 1;
 			slider_elements[index].classList.remove('gallery-slider__item--active');
-			var newIndex = index - 1;
 			slider_elements[newIndex].classList.add('gallery-slider__item--active');
-			if (newIndex === 0) {
-				handler_bk.classList.add('handlers__item--disabled');
-			}
+		}
+
+		if (index === 0) {
+			newIndex = slider_elements.length - 1;
+			slider_elements[index].classList.remove('gallery-slider__item--active');
+			slider_elements[newIndex].classList.add('gallery-slider__item--active'); 
 		}
 	});
 };

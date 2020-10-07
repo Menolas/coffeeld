@@ -9,9 +9,8 @@
 
 .contacts-details__item {
 	margin-bottom: 30px;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns: 150px auto;
 
 	&:last-of-type {
 		margin-bottom: 0;
@@ -24,11 +23,8 @@
 	color: $titles-color;
 }
 
-.contacts-details__name {
-	width: 135px;
-}
-
 .contacts-details__item--phone p {
 	font-weight: 700;
 	color: rgb(229, 157, 117);
+	text-decoration: underline;
 }
