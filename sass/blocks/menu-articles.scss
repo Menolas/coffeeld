@@ -18,40 +18,12 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
 	margin-bottom: 15px;
-}
-
-.menu-articles__article-title {
-	flex: 0.7;
-}
-
-.menu-articles__item-icon {
-	display: block;
-	width: 18px;
-	height: 18px;
-}
-
-.menu-articles__item-icon svg {
-	width: 18px;
-	height: 18px;
-	fill: $cacao;
 }
 
 .menu-articles__article-price {
 	font-size: 18px;
 	font-weight: 700;
 	color: $titles-color;
-}
-
-@media (min-width: 375px) {
-
-	.menu-articles__article-title {
-		flex: unset;
-		padding-right: 20px;
-	}
-
-	.menu-articles__article-price {
-		margin-left: auto;
-	}
 }

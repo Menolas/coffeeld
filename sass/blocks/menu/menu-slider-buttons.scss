@@ -3,15 +3,28 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	padding-left: 35px;
 }
 
 .menu-slider-buttons__item {
-	margin-right: 30px;
+	margin-right: 45px;
 	font-size: 18px;
 	font-weight: 700;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
 }
 
 .menu-slider-buttons__item--active {
 	color: $titles-color;
 	text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  
+  .menu-slider-buttons {
+  	padding: 0;
+  	justify-content: center;
+  }
 }

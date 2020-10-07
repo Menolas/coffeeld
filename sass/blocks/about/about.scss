@@ -15,3 +15,19 @@
 	margin-bottom: 30px;
 	text-align: left;
 }
+
+@media (min-width: 768px) {
+
+	.about__container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.about__picture-container {
+		margin-bottom: 0;
+		margin-right: 30px;
+		width: unset;
+		min-width: 337px;
+		max-width: 457px;
+	}
+}

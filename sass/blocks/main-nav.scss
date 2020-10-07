@@ -40,8 +40,13 @@
 @media (min-width: 768px) {
 
 	.main-nav {
-		margin-bottom: 90px;
 		padding: 46px 32px;
+		padding-bottom: 0;
+	}
+
+	.main-nav--index {
+	  margin-bottom: 90px;
+	  padding-bottom: 46px;
 	}
 }
 

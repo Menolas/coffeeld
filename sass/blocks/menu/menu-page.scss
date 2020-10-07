@@ -23,6 +23,8 @@
 
 .menu-page_introducing {
 	text-align: center;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 .menu-page__btn {
@@ -32,4 +34,20 @@
 
 .menu-page .btn--framed {
 	margin-bottom: 20px;
+}
+
+@media (min-width: 480px) {
+
+	.menu-page__buttons-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.menu-page .menu-page__btn {
+		display: block;
+		margin: 0;
+		margin-right: 20px;
+		width: unset;
+	}
 }

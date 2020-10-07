@@ -1,6 +1,6 @@
 .btn {
 	@include link-style;
-	margin: 0 5%;
+	margin: 0;
 	padding: 14px 26px;
 	text-align: center;
 	color: $white;
@@ -9,6 +9,7 @@
 	background-color: $cacao;
 	border: none;
 	box-sizing: border-box;
+	white-space: nowrap;
 }
 
 .btn--framed {
@@ -21,6 +22,5 @@
 
 	.btn {
 		display: inline-block;
-		margin: 0 auto;
 	}
 }
