@@ -15,3 +15,14 @@
 .contacts__map iframe {
 	width: 100%;
 }
+
+@media (min-width: 768px) {
+
+	.contacts__map {
+		height: 195px;
+	}
+
+	.contacts__map iframe {
+		height: 100%;
+	}
+}

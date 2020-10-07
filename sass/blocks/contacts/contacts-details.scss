@@ -11,6 +11,7 @@
 	margin-bottom: 30px;
 	display: grid;
 	grid-template-columns: 150px auto;
+	align-items: baseline;
 
 	&:last-of-type {
 		margin-bottom: 0;

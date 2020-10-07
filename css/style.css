@@ -1942,6 +1942,18 @@ textarea {
   margin-top: 30px;
   margin-bottom: 15px; }
 
+@media (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .team__item {
+    margin-right: 30px;
+    width: unset;
+    min-width: 346px; }
+    .team__item:nth-child(even) {
+      margin-right: 0; } }
+
 .job-page__title::before {
   background-image: url("../img/job-page/job-title.jpg"); }
 
@@ -2120,6 +2132,12 @@ textarea {
 .contacts__map iframe {
   width: 100%; }
 
+@media (min-width: 768px) {
+  .contacts__map {
+    height: 195px; }
+  .contacts__map iframe {
+    height: 100%; } }
+
 .contacts-details {
   margin-bottom: 30px;
   padding-top: 30px; }
@@ -2132,7 +2150,8 @@ textarea {
 .contacts-details__item {
   margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 150px auto; }
+  grid-template-columns: 150px auto;
+  align-items: baseline; }
   .contacts-details__item:last-of-type {
     margin-bottom: 0; }
 
@@ -2158,3 +2177,8 @@ textarea {
   margin: 0;
   margin-top: 40px;
   width: 100%; }
+
+@media (min-width: 768px) {
+  .contacts-form {
+    margin: 40px 75px 0;
+    padding: 60px 110px 70px; } }

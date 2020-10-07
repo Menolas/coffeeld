@@ -24,3 +24,22 @@
 	margin-top: 30px;
 	margin-bottom: 15px;
 }
+
+@media (min-width: 768px) {
+
+	.team__list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.team__item {
+		margin-right: 30px;
+		width: unset;
+		min-width: 346px;
+
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+	}
+}

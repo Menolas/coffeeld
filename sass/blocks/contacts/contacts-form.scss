@@ -13,3 +13,11 @@
 	margin-top: 40px;
 	width: 100%;
 }
+
+@media (min-width: 768px) {
+
+	.contacts-form {
+		margin: 40px 75px 0;
+		padding: 60px 110px 70px;
+	}
+}

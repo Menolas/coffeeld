@@ -26,9 +26,16 @@ var exposePicture = function (picture) {
 };
 
 for (var i = 0; i < handlers.length; i++) {
-	handlers[i].addEventListener('click', function () {
-		pictureIndex = i;
+	handlers[i].setAttribute('data-position', i);
+};
+
+for (var i = 0; i < handlers.length; i++) {
+	handlers[i].addEventListener('click', function (evt) {
 		hideActivePicture();
-		exposePicture(pictures[pictureIndex]);
-	})
+		hideActiveHandler();
+        var target = event.target;
+        target.classList.add('about-slider__handlers-element--active');
+        var i = target.getAttribute('data-position');
+        pictures[i].classList.add('about-slider__picture-element--active');
+	});
 };
