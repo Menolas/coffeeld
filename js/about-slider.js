@@ -21,10 +21,6 @@ var hideActiveHandler = function () {
 	}
 };
 
-var exposePicture = function (picture) {
-    picture.classList.add('about-slider__picture-element--active');
-};
-
 for (var i = 0; i < handlers.length; i++) {
 	handlers[i].setAttribute('data-position', i);
 };
