@@ -60,22 +60,30 @@
 @media (min-width: 768px) {
 
 	.testimonials {
-		padding: 40px 94px;
+		padding: 40px 0px;
+	}
+
+	.testimonials__container {
+		padding: 0 100px;
 	}
 
 	.testimonials__handlers {
 	  top: 47%;
-	  width: 112%;
+	  width: 107%;
 	}
 }
 
 @media (min-width: 992px) {
 
 	.testimonials {
-		padding: 70px 120px 100px;
+		padding: 70px 0 100px;
 	}
+}
 
-	.testimonials__handlers {
-		width: 105%;
+@media (min-width: 1024px) {
+
+	.testimonials__list {
+		margin: 0 auto;
+		width: 797px;
 	}
 }

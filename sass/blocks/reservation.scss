@@ -1,0 +1,36 @@
+.reservation {
+	position: relative;
+	padding: 40px 0;
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+	  background-image: url("../img/reservation-bg.jpg");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  opacity: 0.7;
+	  z-index: -1;
+	}
+}
+
+.reservation__container {
+	padding: 0;
+}
+
+@media (min-width: 480px) {
+
+	.reservation {
+    padding: 40px 10px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.reservation {
+		padding: 100px 0;
+	}
+}

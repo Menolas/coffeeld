@@ -1,0 +1,135 @@
+.location-index {
+	position: relative;
+	padding: 40px 0;
+	background-color: $white;
+	z-index: 1;
+
+	&::before {
+		@include element-style(100%, 100%, transparent);
+		top: 0;
+		left: 0;
+	  background-image: url("../img/light-background.jpg");
+	  background-size: cover;
+	  opacity: 0.4;
+	  z-index: -1;
+	}
+}
+
+.location-index__title {
+	margin-bottom: 30px;
+}
+
+.location-index__map {
+	margin-bottom: 30px;
+	width: 100%;
+	min-height: 167px;
+}
+
+.location-index__map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.location-index__logo {
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+
+.location-index__element {
+	margin-bottom: 20px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.location-index__element-name {
+	display: block;
+	margin-bottom: 12px;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 700;
+	color: $titles-color;
+}
+
+.location-index__link {
+	color: $links-color;
+	text-decoration: underline;
+}
+
+.location-index__social .social__item {
+	margin-right: 15px;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.location-index__social .social__link {
+	width: 40px;
+	height: 40px;
+	border: 2px solid rgb(63, 66, 70);
+}
+
+.location-index__social .social__link svg {
+	width: 20px;
+	height: 20px;
+	fill: rgb(63, 66, 70);
+}
+
+@media (min-width: 768px) {
+
+	.location-index {
+		padding: 40px 32px;
+	}
+
+	.location-index__container {
+		display: grid;
+		grid-template-columns: 66% auto;
+		grid-template-rows: auto auto;
+		grid-column-gap: 30px;
+	}
+
+	.location-index__title {
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row-start: 1;
+		grid-row-end: 1;
+	}
+
+	.location-index__map {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: -1;
+		margin: 0;
+		height: 352px;
+	}
+
+	.location-index__inner-wrap {
+		grid-column-start: 2;
+		grid-column-end: -1;
+		grid-row-start: 2;
+		grid-row-end: -1;
+	}
+
+	.location-index__element-name {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.location-index {
+		padding: 75px 40px 95px;
+	}
+
+	.location-index__title {
+		margin-bottom: 50px;
+	}
+
+	.location-index__map {
+		height: 346px;
+	}
+}
+

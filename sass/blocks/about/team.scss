@@ -4,6 +4,8 @@
 
 .team__list {
 	@include list-style;
+	display: flex;
+	flex-direction: column;
 }
 
 .team__item {
@@ -16,8 +18,15 @@
 	}
 }
 
+.team__item-picture-wrap {
+	min-height: 182px;
+	max-height: 454px;
+}
+
 .team__item img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .team__item-name {
@@ -31,12 +40,14 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 
 	.team__item {
-		margin-right: 30px;
 		width: unset;
-		min-width: 346px;
+		flex-basis: 46%;
+		min-height: 213px;
+		max-height: 283px;
 
 		&:nth-child(even) {
 			margin-right: 0;

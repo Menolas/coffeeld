@@ -711,7 +711,8 @@ textarea {
 
 .vendors__text {
   margin-bottom: 30px;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
 
 .vendors__list {
   margin: 0;
@@ -742,6 +743,8 @@ textarea {
 @media (min-width: 768px) {
   .vendors {
     padding: 40px 32px; }
+  .vendors__text {
+    font-size: 19px; }
   .vendors__list {
     display: grid;
     grid-template-columns: auto auto;
@@ -757,7 +760,8 @@ textarea {
   .vendors__title {
     margin-bottom: 50px; }
   .vendors__text {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px;
+    font-size: 20px; } }
 
 @media (min-width: 1200px) {
   .vendors__list {
@@ -848,7 +852,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: -1; }
 
 .present-list__title {
@@ -1112,16 +1116,21 @@ textarea {
 
 @media (min-width: 768px) {
   .testimonials {
-    padding: 40px 94px; }
+    padding: 40px 0px; }
+  .testimonials__container {
+    padding: 0 100px; }
   .testimonials__handlers {
     top: 47%;
-    width: 112%; } }
+    width: 107%; } }
 
 @media (min-width: 992px) {
   .testimonials {
-    padding: 70px 120px 100px; }
-  .testimonials__handlers {
-    width: 105%; } }
+    padding: 70px 0 100px; } }
+
+@media (min-width: 1024px) {
+  .testimonials__list {
+    margin: 0 auto;
+    width: 797px; } }
 
 .job-index {
   position: relative;
@@ -1926,7 +1935,9 @@ textarea {
 .team__list {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
 
 .team__item {
   margin-bottom: 30px;
@@ -1935,8 +1946,15 @@ textarea {
   .team__item:last-of-type {
     margin-bottom: 0; }
 
+.team__item-picture-wrap {
+  min-height: 182px;
+  max-height: 454px; }
+
 .team__item img {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .team__item-name {
   margin-top: 30px;
@@ -1946,11 +1964,13 @@ textarea {
   .team__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-around; }
   .team__item {
-    margin-right: 30px;
     width: unset;
-    min-width: 346px; }
+    flex-basis: 46%;
+    min-height: 213px;
+    max-height: 283px; }
     .team__item:nth-child(even) {
       margin-right: 0; } }
 

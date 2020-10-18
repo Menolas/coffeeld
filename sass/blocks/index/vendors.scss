@@ -9,6 +9,7 @@
 .vendors__text {
 	margin-bottom: 30px;
 	text-align: center;
+	font-size: 18px;
 }
 
 .vendors__list {
@@ -48,6 +49,10 @@
 		padding: 40px 32px;
 	}
 
+	.vendors__text {
+		font-size: 19px;
+	}
+
 	.vendors__list {
 		display: grid;
 		grid-template-columns: auto auto;
@@ -73,6 +78,7 @@
 
   .vendors__text {
   	margin-bottom: 50px;
+  	font-size: 20px;
   }
 
 }
