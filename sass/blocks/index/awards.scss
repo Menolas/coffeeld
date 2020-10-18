@@ -11,6 +11,7 @@
 		left: 0;
 	  background-image: url("../img/dark-background.jpg");
 	  background-repeat: no-repeat;
+	  background-size: cover;
 	  opacity: 0.4;
 	  z-index: -1;
 	}
@@ -49,7 +50,7 @@
 @media (min-width: 768px) {
 
 	.awards {
-		padding: 40px 32px;
+		padding: 40px 0;
 	}
 
 	.awards__list {
@@ -62,7 +63,7 @@
 @media (min-width: 992px) {
 
 	.awards {
-		padding: 70px 40px 75px;
+		padding: 70px 0 75px;
 	}
 
 	.awards__title {

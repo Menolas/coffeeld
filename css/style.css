@@ -109,6 +109,10 @@ textarea {
   .container {
     padding: 0 32px; } }
 
+@media (min-width: 992px) {
+  .container {
+    padding: 0 40px; } }
+
 .title {
   text-align: center;
   color: white;
@@ -222,7 +226,7 @@ textarea {
     background-size: cover;
     background-position: center 30px;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: -1; }
 
 .main-header--index .toggler__element {
@@ -253,15 +257,17 @@ textarea {
 
 @media (min-width: 768px) {
   .main-header--index {
-    padding-bottom: 120px; }
+    padding-bottom: 250px; }
   .main-header__moto {
     margin-top: 30px;
     font-size: 26px; } }
 
 @media (min-width: 1024px) {
   .main-header {
-    padding-bottom: 220px; }
-    .main-header::before {
+    padding-bottom: 35px; }
+  .main-header--index {
+    padding-bottom: 250px; }
+    .main-header--index::before {
       background-image: url("../img/header-bg.jpg"); }
   .main-header__btn {
     margin-top: 50px; } }
@@ -432,8 +438,6 @@ textarea {
     padding-bottom: 46px; } }
 
 @media (min-width: 1024px) {
-  .main-nav {
-    margin-bottom: 160px; }
   .main-nav__logo {
     margin-bottom: 50px;
     font-size: 40px; }
@@ -450,8 +454,7 @@ textarea {
       margin-right: 0; } }
 
 .menus {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
   background-color: white; }
 
 .menus__container {
@@ -561,11 +564,14 @@ textarea {
 
 @media (min-width: 1024px) {
   .menus {
-    padding: 95px 40px; }
+    padding: 95px 0; }
+  .menus__container {
+    padding: 0 40px; }
   .menus__title {
     margin-bottom: 50px; }
   .menus__list {
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 50px; }
   .menus__item {
     margin-right: 2px;
     margin-bottom: 0;
@@ -663,7 +669,7 @@ textarea {
 
 @media (min-width: 768px) {
   .cafes {
-    padding: 40px 32px;
+    padding: 40px 0;
     text-align: center; }
   .cafes__picture-wrap {
     min-height: 246px;
@@ -675,12 +681,12 @@ textarea {
 
 @media (min-width: 992px) {
   .cafes {
-    padding: 95px 32px; }
+    padding: 95px 0; }
   .cafes__title {
     margin-bottom: 50px; }
   .cafes__list {
     margin: 0 auto;
-    min-width: 962px;
+    min-width: 912px;
     max-width: 1170px; }
   .cafes__item {
     margin-bottom: 0; }
@@ -697,11 +703,13 @@ textarea {
     width: 50%;
     box-sizing: border-box; }
   .cafes__item:nth-of-type(even) .cafes__article {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse; }
+  .cafes__btn {
+    margin-top: 40px; } }
 
 @media (min-width: 1024px) {
   .cafes {
-    padding: 95px 40px; } }
+    padding: 95px 0; } }
 
 .vendors {
   padding: 40px 0; }
@@ -742,7 +750,7 @@ textarea {
 
 @media (min-width: 768px) {
   .vendors {
-    padding: 40px 32px; }
+    padding: 40px 0; }
   .vendors__text {
     font-size: 19px; }
   .vendors__list {
@@ -755,7 +763,7 @@ textarea {
 
 @media (min-width: 992px) {
   .vendors {
-    padding: 95px 40px 70px;
+    padding: 95px 0 70px;
     padding-bottom: 0; }
   .vendors__title {
     margin-bottom: 50px; }
@@ -804,7 +812,7 @@ textarea {
 
 @media (min-width: 768px) {
   .services {
-    padding: 40px 32px; }
+    padding: 40px 0; }
   .services__list {
     display: grid;
     grid-template-rows: auto;
@@ -820,7 +828,7 @@ textarea {
 
 @media (min-width: 992px) {
   .services {
-    padding: 75px 40px 95px; }
+    padding: 75px 0 95px; }
   .services__title {
     margin-bottom: 50px; } }
 
@@ -868,7 +876,7 @@ textarea {
 
 @media (min-width: 768px) {
   .present-list {
-    padding: 40px 32px; }
+    padding: 40px 0; }
   .present-list__container {
     display: flex;
     flex-direction: row;
@@ -884,7 +892,7 @@ textarea {
 
 @media (min-width: 992px) {
   .present-list {
-    padding: 110px 40px 105px; } }
+    padding: 110px 0 105px; } }
 
 .about-index {
   padding: 40px 0; }
@@ -911,16 +919,18 @@ textarea {
 
 @media (min-width: 768px) {
   .about-index {
-    padding: 40px 32px;
+    padding: 40px 0;
     text-align: center; } }
 
 @media (min-width: 992px) {
   .about-index {
-    padding: 95px 40px; }
+    padding: 95px 0; }
   .about-index__picture-wrap {
     margin-bottom: 50px; }
   .about-index__title {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .about-index__btn {
+    margin-top: 40px; } }
 
 .awards {
   position: relative;
@@ -939,6 +949,7 @@ textarea {
     left: 0;
     background-image: url("../img/dark-background.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     opacity: 0.4;
     z-index: -1; }
 
@@ -970,7 +981,7 @@ textarea {
 
 @media (min-width: 768px) {
   .awards {
-    padding: 40px 32px; }
+    padding: 40px 0; }
   .awards__list {
     display: grid;
     grid-template-columns: repeat(2, 48%);
@@ -978,7 +989,7 @@ textarea {
 
 @media (min-width: 992px) {
   .awards {
-    padding: 70px 40px 75px; }
+    padding: 70px 0 75px; }
   .awards__title {
     margin-bottom: 50px; }
   .awards__list {
@@ -1007,7 +1018,7 @@ textarea {
 
 @media (min-width: 768px) {
   .article-best-coffee-shop {
-    padding: 40px 32px; }
+    padding: 40px 0; }
   .article-best-coffee-shop__container {
     display: grid;
     grid-template-columns: repeat(2, 48%);
@@ -1045,7 +1056,7 @@ textarea {
 
 @media (min-width: 992px) {
   .article-best-coffee-shop {
-    padding: 95px 40px 75px; }
+    padding: 95px 0 75px; }
   .article-best-coffee-shop__picture-wrap {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -1165,7 +1176,7 @@ textarea {
 
 @media (min-width: 768px) {
   .job-index {
-    padding: 40px 32px; }
+    padding: 40px 0; }
     .job-index::before {
       background-position: center; }
   .job-index__container {
@@ -1183,7 +1194,7 @@ textarea {
 
 @media (min-width: 992px) {
   .job-index {
-    padding: 100px 40px; } }
+    padding: 100px 0; } }
 
 .gallery-index {
   position: relative;
@@ -1201,13 +1212,17 @@ textarea {
 
 @media (min-width: 768px) {
   .gallery-index {
-    padding: 40px 32px;
+    padding: 40px 0;
     text-align: center;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .gallery-index__container {
+    padding: 32px; } }
 
 @media (min-width: 992px) {
   .gallery-index {
-    padding: 95px 40px 75px; }
+    padding: 95px 0 75px; }
+  .gallery-index__container {
+    padding: 0 40px; }
   .gallery-index__title {
     margin-bottom: 50px; }
   .gallery-index__btn {
@@ -1240,7 +1255,8 @@ textarea {
     margin-bottom: 30px;
     min-height: 352px;
     width: 100%;
-    background-color: rgba(103, 103, 103, 0.2); }
+    background-color: rgba(103, 103, 103, 0.2);
+    overflow: hidden; }
   .gallery-slider__big-picture-container img {
     width: 100%; }
   .gallery-slider__list {
@@ -1266,6 +1282,10 @@ textarea {
     min-height: 129px; }
   .gallery-slider__list {
     margin: 0 100px; } }
+
+@media (min-width: 1280px) {
+  .gallery-slider__big-picture-container {
+    height: 503px; } }
 
 .location-index {
   position: relative;
@@ -1336,7 +1356,7 @@ textarea {
 
 @media (min-width: 768px) {
   .location-index {
-    padding: 40px 32px; }
+    padding: 40px 0; }
   .location-index__container {
     display: grid;
     grid-template-columns: 66% auto;
@@ -1352,6 +1372,7 @@ textarea {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: -1;
+    align-self: flex-end;
     margin: 0;
     height: 352px; }
   .location-index__inner-wrap {
@@ -1364,7 +1385,7 @@ textarea {
 
 @media (min-width: 992px) {
   .location-index {
-    padding: 75px 40px 95px; }
+    padding: 75px 0 95px; }
   .location-index__title {
     margin-bottom: 50px; }
   .location-index__map {
@@ -1388,15 +1409,15 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: -1; }
 
 .reservation__container {
   padding: 0; }
 
 @media (min-width: 480px) {
-  .reservation {
-    padding: 40px 10px; } }
+  .reservation__container {
+    padding: 10px; } }
 
 @media (min-width: 992px) {
   .reservation {

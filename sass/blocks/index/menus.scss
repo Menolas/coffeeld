@@ -1,6 +1,5 @@
 .menus {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 40px 0;
 	background-color: $white;
 }
 
@@ -134,7 +133,11 @@
 @media (min-width: 1024px) {
 
 	.menus {
-		padding: 95px 40px;
+		padding: 95px 0;
+	}
+
+	.menus__container {
+		padding: 0 40px;
 	}
 
 	.menus__title {
@@ -143,6 +146,7 @@
 
 	.menus__list {
 		flex-direction: row;
+		margin-bottom: 50px;
 	}
 
 	.menus__item {
@@ -175,3 +179,4 @@
 		display: flex;
 	}
 }
+

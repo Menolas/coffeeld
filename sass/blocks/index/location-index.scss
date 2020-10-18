@@ -80,7 +80,7 @@
 @media (min-width: 768px) {
 
 	.location-index {
-		padding: 40px 32px;
+		padding: 40px 0;
 	}
 
 	.location-index__container {
@@ -102,6 +102,7 @@
 		grid-column-end: 1;
 		grid-row-start: 2;
 		grid-row-end: -1;
+		align-self: flex-end;
 		margin: 0;
 		height: 352px;
 	}
@@ -121,7 +122,7 @@
 @media (min-width: 992px) {
 
 	.location-index {
-		padding: 75px 40px 95px;
+		padding: 75px 0 95px;
 	}
 
 	.location-index__title {

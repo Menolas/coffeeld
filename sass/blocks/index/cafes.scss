@@ -83,7 +83,7 @@
 @media (min-width: 768px) {
 
 	.cafes {
-		padding: 40px 32px;
+		padding: 40px 0;
 		text-align: center;
 	}
 
@@ -104,7 +104,7 @@
 @media (min-width: 992px) {
 
 	.cafes {
-    padding: 95px 32px;
+    padding: 95px 0;
 	}
 
 	.cafes__title {
@@ -113,7 +113,7 @@
 
 	.cafes__list {
 		margin: 0 auto;
-		min-width: 962px;
+		min-width: 912px;
 		max-width: 1170px;
 	}
 
@@ -142,12 +142,16 @@
 	.cafes__item:nth-of-type(even) .cafes__article {
     flex-direction: row-reverse;
 	}
+
+	.cafes__btn {
+		margin-top: 40px;
+	}
 }
 
 @media (min-width: 1024px) {
 
 	.cafes {
-		padding: 95px 40px;
+		padding: 95px 0;
 	}
 }
 

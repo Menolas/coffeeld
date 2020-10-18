@@ -32,7 +32,7 @@
 @media (min-width: 768px) {
 
 	.about-index {
-		padding: 40px 32px;
+		padding: 40px 0;
 		text-align: center;
 	}
 }
@@ -40,7 +40,7 @@
 @media (min-width: 992px) {
 
 	.about-index {
-		padding: 95px 40px;
+		padding: 95px 0;
 	}
 
 	.about-index__picture-wrap {
@@ -49,5 +49,9 @@
 
 	.about-index__title {
 		margin-bottom: 50px;
+	}
+
+	.about-index__btn {
+		margin-top: 40px;
 	}
 }

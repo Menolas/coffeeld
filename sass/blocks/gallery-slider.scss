@@ -31,6 +31,7 @@
 		min-height: 352px;
 		width: 100%;
 		background-color: $input-bg;
+		overflow: hidden;
 	}
 
 	.gallery-slider__big-picture-container img {
@@ -75,5 +76,12 @@
 
 	.gallery-slider__list {
 		margin: 0 100px;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.gallery-slider__big-picture-container {
+		height: 503px;
 	}
 }

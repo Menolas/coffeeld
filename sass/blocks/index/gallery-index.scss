@@ -19,15 +19,24 @@
 @media (min-width: 768px) {
 
 	.gallery-index {
-		padding: 40px 32px;
+		padding: 40px 0;
 		text-align: center;
 		overflow: hidden;
+	}
+
+	.gallery-index__container {
+		padding: 32px;
 	}
 }
 
 @media (min-width: 992px) {
+
 	.gallery-index {
-		padding: 95px 40px 75px;
+		padding: 95px 0 75px;
+	}
+
+	.gallery-index__container {
+		padding: 0 40px;
 	}
 
 	.gallery-index__title {

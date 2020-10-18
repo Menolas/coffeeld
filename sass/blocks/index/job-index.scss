@@ -33,7 +33,7 @@
 @media (min-width: 768px) {
 
 	.job-index {
-		padding: 40px 32px;
+		padding: 40px 0;
 
 		&::before {
 			background-position: center;
@@ -64,6 +64,6 @@
 @media (min-width: 992px) {
 
 	.job-index {
-		padding: 100px 40px;
+		padding: 100px 0;
 	}
 }
