@@ -13,7 +13,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
-		opacity: 0.6;
+		opacity: 0.5;
 		z-index: -1;
 	}
 }
@@ -77,5 +77,26 @@
 
 	.vacancies__item {
 		text-align: left;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.vacancies {
+		padding: 75px 0 100px;
+	}
+
+	.vacancies__list {
+		margin: 0 auto;
+		margin-bottom: 50px;
+		width: 830px;
+	}
+
+	.vacancies__item {
+		padding: 24px 58px 22px 30px;
+	}
+
+	.vacancies__item-handler {
+		right: 25px;
 	}
 }

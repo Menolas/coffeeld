@@ -2104,13 +2104,26 @@ textarea {
     margin-bottom: 30px;
     width: 100%; } }
 
-.benefits {
-  margin-top: 15px; }
+@media (min-width: 992px) {
+  .job {
+    padding-bottom: 100px; }
+  .job__inner-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+  .job__picture-container {
+    margin: 0;
+    flex-basis: 48%; }
+  .job__benefits {
+    flex-basis: 48%; } }
 
 .benefits__list {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin-top: 15px; }
 
 .benefits__item {
   margin-bottom: 30px; }
@@ -2143,7 +2156,7 @@ textarea {
   font-weight: 700; }
 
 @media (min-width: 768px) {
-  .benefits {
+  .benefits__list {
     margin-top: 30px; }
   .benefits__item {
     display: flex;
@@ -2160,6 +2173,38 @@ textarea {
   .benefits__item span {
     text-align: left;
     font-size: 20px; } }
+
+@media (min-width: 992px) {
+  .benefits__list {
+    margin-top: 20px; }
+  .benefits__item {
+    margin-bottom: 15px; }
+    .benefits__item:last-of-type {
+      margin-bottom: 0; }
+  .benefits__svg-wrap {
+    margin-right: 15px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px; }
+  .benefits__item svg {
+    width: 50px;
+    height: 50px; } }
+
+@media (min-width: 1200px) {
+  .benefits__list {
+    margin-top: 30px; }
+  .benefits__item {
+    margin-bottom: 25px; }
+    .benefits__item:last-of-type {
+      margin-bottom: 0; }
+  .benefits__svg-wrap {
+    margin-right: 25px;
+    min-width: 70px;
+    width: 70px;
+    height: 70px; }
+  .benefits__item svg {
+    width: 70px;
+    height: 70px; } }
 
 .vacancies {
   position: relative;
@@ -2180,7 +2225,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: -1; }
 
 .vacancies__title {
@@ -2232,6 +2277,18 @@ textarea {
     text-align: center; }
   .vacancies__item {
     text-align: left; } }
+
+@media (min-width: 992px) {
+  .vacancies {
+    padding: 75px 0 100px; }
+  .vacancies__list {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 830px; }
+  .vacancies__item {
+    padding: 24px 58px 22px 30px; }
+  .vacancies__item-handler {
+    right: 25px; } }
 
 .gallery-page {
   padding-bottom: 40px; }
