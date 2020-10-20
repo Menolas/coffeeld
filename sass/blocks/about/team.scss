@@ -36,6 +36,10 @@
 
 @media (min-width: 768px) {
 
+	.team__container {
+		padding: 0 17px;
+	}
+
 	.team__list {
 		display: flex;
 		flex-direction: row;
@@ -45,12 +49,25 @@
 
 	.team__item {
 		width: unset;
-		flex-basis: 46%;
-		min-height: 213px;
-		max-height: 283px;
+		flex-basis: 45.9%;
 
 		&:nth-child(even) {
 			margin-right: 0;
 		}
+	}
+}
+
+@media (min-width: 992px) {
+
+	.team__container {
+		padding: 0 40px;
+	}
+
+	.team__list {
+		justify-content: space-between;
+	}
+
+	.team__item {
+		flex-basis: 31%;
 	}
 }

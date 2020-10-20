@@ -5,6 +5,7 @@
 .about__picture-container {
 	margin-bottom: 30px;
 	width: 100%;
+	overflow: hidden;
 }
 
 .about__picture-container img {
@@ -21,13 +22,26 @@
 	.about__container {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.about__picture-container {
 		margin-bottom: 0;
-		margin-right: 30px;
-		width: unset;
-		min-width: 337px;
-		max-width: 457px;
+		width: 48%;
+	}
+
+	.about__block-wrap {
+		width: 48%;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.about__picture-container {
+		min-width: unset;
+		max-width: unset;
+		width: 570px;
+		height: 293px;
 	}
 }

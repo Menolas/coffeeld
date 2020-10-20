@@ -1,4 +1,12 @@
 .menu-slider {
 	margin-top: 35px;
 	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+@media (min-width: 992px) {
+	.menu-slider {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
 }

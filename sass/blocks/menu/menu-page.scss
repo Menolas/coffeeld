@@ -18,7 +18,20 @@
 }
 
 .menu-page__title {
+	background-color: $black;
+	z-index: 1;
+
+	&::before {
+	@include element-style(100%, 100%, transparent);
+	top: 0;
+	left: 0;
 	background-image: url("../img/menu-page-title-mobile.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+  }
 }
 
 .menu-page_introducing {

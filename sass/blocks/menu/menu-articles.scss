@@ -55,3 +55,21 @@
 		margin-left: auto;
 	}
 }
+
+@media (min-width: 992px) {
+
+	.menu-articles {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.menu-articles__item {
+		width: 48.4%;
+		box-sizing: border-box;
+	}
+
+	.menu-articles__item:nth-child(even) {
+		margin-right: 0;
+	}
+}
