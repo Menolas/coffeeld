@@ -102,8 +102,7 @@ textarea {
 
 .container {
   margin: 0 auto;
-  padding: 0 16px;
-  max-width: 1170px; }
+  padding: 0 16px; }
 
 @media (min-width: 768px) {
   .container {
@@ -112,6 +111,10 @@ textarea {
 @media (min-width: 992px) {
   .container {
     padding: 0 40px; } }
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1170px; } }
 
 .title {
   text-align: center;
@@ -1693,6 +1696,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
+    background-position: center;
     z-index: -1; }
 
 @media (min-width: 992px) {
@@ -1736,7 +1740,6 @@ textarea {
     background-image: url("../img/menu-page-title-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     opacity: 0.5;
     z-index: -1; }
 
@@ -1931,8 +1934,7 @@ textarea {
   padding-bottom: 40px; }
 
 .about-page__title::before {
-  background-image: url("../img/about-page-title.jpg");
-  background-position: center; }
+  background-image: url("../img/about-page-title.jpg"); }
 
 .about {
   padding-bottom: 80px; }
@@ -2091,6 +2093,17 @@ textarea {
 .job__picture-container img {
   width: 100%; }
 
+@media (min-width: 768px) {
+  .job__intro {
+    font-size: 19px; }
+  .job__inner-wrap {
+    margin: 0 auto;
+    width: 570px; }
+  .job__picture-container {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%; } }
+
 .benefits {
   margin-top: 15px; }
 
@@ -2117,8 +2130,8 @@ textarea {
   overflow: hidden; }
 
 .benefits__item svg {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   fill: white;
   color: white; }
 
@@ -2128,6 +2141,25 @@ textarea {
   color: #27292b;
   font-size: 18px;
   font-weight: 700; }
+
+@media (min-width: 768px) {
+  .benefits {
+    margin-top: 30px; }
+  .benefits__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .benefits__svg-wrap {
+    margin: 0;
+    margin-right: 25px;
+    width: 70px;
+    height: 70px; }
+  .benefits__item svg {
+    width: 70px;
+    height: 70px; }
+  .benefits__item span {
+    text-align: left;
+    font-size: 20px; } }
 
 .vacancies {
   position: relative;
@@ -2165,11 +2197,19 @@ textarea {
   padding: 0;
   list-style: none;
   margin-bottom: 30px;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .vacancies__item {
+  position: relative;
   padding: 24px 38px 20px 25px;
   border-bottom: 1px solid white; }
+
+.vacancies__item-handler {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
+  z-index: 50; }
 
 .vacancies__item-handler svg {
   width: 18px;
@@ -2186,6 +2226,12 @@ textarea {
 
 .vacancies__full-description {
   display: none; }
+
+@media (min-width: 768px) {
+  .vacancies {
+    text-align: center; }
+  .vacancies__item {
+    text-align: left; } }
 
 .gallery-page {
   padding-bottom: 40px; }

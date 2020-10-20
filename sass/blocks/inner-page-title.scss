@@ -9,10 +9,11 @@
 		@include element-style(100%, 100%, transparent);
 		top: 0;
 		left: 0;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  opacity: 0.6;
-	  z-index: -1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.6;
+		background-position: center;
+		z-index: -1;
 	}
 }
 

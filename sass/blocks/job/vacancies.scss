@@ -32,12 +32,21 @@
 .vacancies__list {
 	@include list-style;
 	margin-bottom: 30px;
-	background-color: $black;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .vacancies__item {
+	position: relative;
 	padding: 24px 38px 20px 25px;
 	border-bottom: 1px solid $white;
+}
+
+.vacancies__item-handler {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translate(0, -50%);
+	z-index: 50;
 }
 
 .vacancies__item-handler svg {
@@ -58,4 +67,15 @@
 
 .vacancies__full-description {
 	display: none;
+}
+
+@media (min-width: 768px) {
+
+	.vacancies {
+		text-align: center;
+	}
+
+	.vacancies__item {
+		text-align: left;
+	}
 }

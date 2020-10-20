@@ -21,3 +21,26 @@
 .job__picture-container img {
 	width: 100%;
 }
+
+@media (min-width: 768px) {
+
+	.job__intro {
+		font-size: 19px;
+	}
+
+	.job__inner-wrap {
+		margin: 0 auto;
+		width: 570px;
+	}
+
+    .job__picture-container {
+    	margin: 0 auto;
+    	margin-bottom: 30px;
+    	width: 100%;
+    }
+
+    .job__benefits {
+    	
+    }
+
+}

@@ -27,8 +27,8 @@
 }
 
 .benefits__item svg {
-	width: 45px;
-	height: 45px;
+	width: 50px;
+	height: 50px;
 	fill: $white;
 	color: $white;
 }
@@ -39,4 +39,34 @@
 	color: $titles-color;
 	font-size: 18px;
 	font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+	.benefits {
+		margin-top: 30px;
+	}
+
+	.benefits__item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.benefits__svg-wrap {
+		margin: 0;
+		margin-right: 25px;
+		width: 70px;
+	    height: 70px;
+	}
+
+	.benefits__item svg {
+		width: 70px;
+	    height: 70px;
+	}
+
+	.benefits__item span {
+		text-align: left;
+		font-size: 20px;
+	}
 }
