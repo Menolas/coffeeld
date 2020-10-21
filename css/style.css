@@ -2258,10 +2258,12 @@ textarea {
 
 .vacancies__item-handler {
   position: absolute;
-  top: 50%;
+  top: 35px;
   right: 15px;
-  transform: translate(0, -50%);
   z-index: 50; }
+
+.vacancies__item-handler--fliped {
+  transform: rotate(180deg); }
 
 .vacancies__item-handler svg {
   width: 18px;
@@ -2277,7 +2279,18 @@ textarea {
   font-size: 12px; }
 
 .vacancies__full-description {
-  display: none; }
+  display: none;
+  padding: 20px 0 30px;
+  color: #9ba2aa; }
+
+.vacancies__full-description span {
+  font-weight: 700; }
+
+.vacancies__full-description p {
+  margin: 8px 0; }
+
+.vacancies__full-description--shown {
+  display: block; }
 
 @media (min-width: 768px) {
   .vacancies {
