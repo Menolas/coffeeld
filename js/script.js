@@ -65,5 +65,15 @@ if (screen.width < 768) {
 if (screen.width > 767) {
     deactivItem();
     exposeElements(0, 3);
+
+    for (var i = 0; i < slider_elements.length; i++) {
+    	slider_elements[i].addEventListener('click', function (evt) {
+    		var target = event.currentTarget;
+    		var pictureUrl = target.querySelector('.gallery-slider__img-mini').src;
+
+    		bigPicture.src = pictureUrl.replace('-mini', '');
+    		console.log(bigPicture.src);
+    	});
+    }
 };
 

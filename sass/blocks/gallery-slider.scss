@@ -9,14 +9,19 @@
 .gallery-slider__item {
 	display: none;
 	width: 100%;
+	overflow: hidden;
 }
 
 .gallery-slider__item--active {
 	display: block;
 }
 
+.gallery-slider__img-mini {
+	display: none;
+}
+
 .gallery-slider__item img {
-	width: 100%;
+	object-fit: cover;
 }
 
 .gallery-slider__big-picture-container {
@@ -29,6 +34,7 @@
 		display: block;
 		margin-bottom: 30px;
 		min-height: 352px;
+		max-height: 503px;
 		width: 100%;
 		background-color: $input-bg;
 		overflow: hidden;
@@ -53,7 +59,11 @@
 	}
 
 	.gallery-slider__item img {
-		min-height: 67px;
+		display: none;
+	}
+
+	.gallery-slider__item .gallery-slider__img-mini {
+		display: block;
 	}
 
 	.gallery-slider__handlers {

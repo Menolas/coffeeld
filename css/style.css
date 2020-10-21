@@ -94,7 +94,8 @@ p {
 
 img {
   display: block;
-  height: auto; }
+  width: 100%;
+  height: 100%; }
 
 input,
 textarea {
@@ -1245,13 +1246,18 @@ textarea {
 
 .gallery-slider__item {
   display: none;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .gallery-slider__item--active {
   display: block; }
 
+.gallery-slider__img-mini {
+  display: none; }
+
 .gallery-slider__item img {
-  width: 100%; }
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .gallery-slider__big-picture-container {
   display: none; }
@@ -1261,6 +1267,7 @@ textarea {
     display: block;
     margin-bottom: 30px;
     min-height: 352px;
+    max-height: 503px;
     width: 100%;
     background-color: rgba(103, 103, 103, 0.2);
     overflow: hidden; }
@@ -1278,7 +1285,9 @@ textarea {
     width: auto;
     min-height: 67px; }
   .gallery-slider__item img {
-    min-height: 67px; }
+    display: none; }
+  .gallery-slider__item .gallery-slider__img-mini {
+    display: block; }
   .gallery-slider__handlers {
     width: 95%; } }
 
@@ -2254,7 +2263,7 @@ textarea {
 .vacancies__item {
   position: relative;
   padding: 24px 38px 20px 25px;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
 
 .vacancies__item-handler {
   position: absolute;
