@@ -20,3 +20,16 @@
 		background-image: url("../img/contact-page-title.jpg");
 	}
 }
+
+@media (min-width: 992px) {
+
+	.contacts-page__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contacts-page__form-wrap {
+		flex-basis: 48.3%;
+	}
+}

@@ -36,6 +36,8 @@
 
 	.gallery-slider__big-picture-container img {
 		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.gallery-slider__list {

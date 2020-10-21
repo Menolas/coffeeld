@@ -18,11 +18,22 @@
 
 @media (min-width: 768px) {
 
+	.contacts__intro {
+		font-size: 19px;
+	}
+
 	.contacts__map {
 		height: 195px;
 	}
 
 	.contacts__map iframe {
 		height: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.contacts {
+		flex-basis: 48.3%;
 	}
 }

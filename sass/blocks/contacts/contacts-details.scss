@@ -29,3 +29,10 @@
 	color: rgb(229, 157, 117);
 	text-decoration: underline;
 }
+
+@media (min-width: 992px) {
+
+	.contacts-details {
+		margin-bottom: 50px;
+	}
+}
