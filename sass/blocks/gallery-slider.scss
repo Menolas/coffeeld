@@ -1,3 +1,7 @@
+.gallery-slider__container {
+	padding: 0;
+}
+
 .gallery-slider__list-wrap {
 	position: relative;
 }
@@ -14,10 +18,6 @@
 
 .gallery-slider__item--active {
 	display: block;
-}
-
-.gallery-slider__img-mini {
-	display: none;
 }
 
 .gallery-slider__item img {
@@ -51,19 +51,12 @@
 		grid-template-columns: auto auto auto auto;
 		grid-column-gap: 20px;
 		margin: 0 50px;
+		min-height: 67px;
 	}
 
 	.gallery-slider__item {
 		width: auto;
 		min-height: 67px;
-	}
-
-	.gallery-slider__item img {
-		display: none;
-	}
-
-	.gallery-slider__item .gallery-slider__img-mini {
-		display: block;
 	}
 
 	.gallery-slider__handlers {
