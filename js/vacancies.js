@@ -1,5 +1,7 @@
 "use strict";
 
+(function () {
+
 var vacanciesBlock = document.querySelector('.vacancies__list');
 var handlers = vacanciesBlock.querySelectorAll('.vacancies__item-handler');
 var vacanciesElements = vacanciesBlock.querySelectorAll('.vacancies__item');
@@ -12,4 +14,5 @@ for (var i = 0; i < vacanciesElements.length; i++) {
     description.classList.toggle('vacancies__full-description--shown');
     handler.classList.toggle('vacancies__item-handler--fliped');
 	});
-}
+};
+})();

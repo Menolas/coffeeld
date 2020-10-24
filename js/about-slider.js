@@ -1,5 +1,7 @@
 "use strict";
 
+(function () {
+
 var slider = document.querySelector('.about-slider');
 var pictures = slider.querySelectorAll('.about-slider__picture-element');
 var handlers = slider.querySelectorAll('.about-slider__handlers-element');
@@ -35,3 +37,4 @@ for (var i = 0; i < handlers.length; i++) {
         pictures[i].classList.add('about-slider__picture-element--active');
 	});
 };
+})();

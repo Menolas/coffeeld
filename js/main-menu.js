@@ -1,5 +1,7 @@
 "use strict";
 
+(function () {
+
 var menuBlock = document.querySelector('.main-nav');
 var menuButton = menuBlock.querySelector('.toggler');
 var menu = menuBlock.querySelector('.main-nav__list');
@@ -9,3 +11,5 @@ menuButton.addEventListener('click', function () {
 	menuBlock.classList.toggle('main-nav--mobile');
 	menuButton.classList.toggle('toggler--cross');
 });
+
+})();

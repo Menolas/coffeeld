@@ -1,8 +1,11 @@
 "use strict";
+
+(function () {
 // блок слайдера
 var gallery_slider = document.querySelector('.gallery-slider');
 // массив елементов списка 
 var slider_elements = gallery_slider.querySelectorAll('.gallery-slider__item');
+console.log(slider_elements);
 // правый переключатель
 var handler_fw = gallery_slider.querySelector('.handlers__item--right');
 // левый переключатель
@@ -11,6 +14,10 @@ var handler_bk = gallery_slider.querySelector('.handlers__item--left');
 var bigPicture = gallery_slider.querySelector('.gallery-slider__big-picture-container img');
 
 var lastIndex = slider_elements.length - 1;
+
+var galleryContainer = gallery_slider.querySelector('.gallery-slider__list');
+var galleryElementTemplate = document.querySelector('template').content.querySelector('.gallery-slider__item');
+
 
 // присвоение всем елементам атрибута 'data-position'
 for (var i = 0; i < slider_elements.length; i++) {
@@ -29,8 +36,10 @@ var searchActiveItem = function () {
 };
 
 // спрятать елемент
-var deactivItem = function (element) {
-	element.classList.remove('gallery-slider__item--active');
+var deactivItem = function () {
+	var index = searchActiveItem();
+	slider_elements[index].classList.remove('gallery-slider__item--active');
+	return index;
 };
 
 // показать елемент
@@ -73,9 +82,6 @@ var createGallery = function () {
 };
 
 var galleryItems = createGallery();
-
-var galleryContainer = gallery_slider.querySelector('.gallery-slider__list');
-var galleryElementTemplate = document.querySelector('template').content.querySelector('.gallery-slider__item');
 
 var renderGalleryElement = function (picture) {
 	var galleryElement = galleryElementTemplate.cloneNode(true);
@@ -164,35 +170,31 @@ var renderReversGallery2 = function (pictures, min, max) {
 if (screen.width < 768) {
 
 	handler_fw.addEventListener('click', function () {
-	    var index = searchActiveItem();
+	    var index = deactivItem();
 	    var newIndex;
-	    if (index < slider_elements.length -1) {
+	    if (index < lastIndex) {
 	    	newIndex = index + 1;
-	    	slider_elements[index].classList.remove('gallery-slider__item--active');
 	    	exposeElement(slider_elements[newIndex]);
 	    }
 
-	    if (index === slider_elements.length - 1) {
+	    if (index === lastIndex) {
 	    	newIndex = 0;
-	    	slider_elements[index].classList.remove('gallery-slider__item--active');
-	    	slider_elements[newIndex].classList.add('gallery-slider__item--active');
+	    	exposeElement(slider_elements[newIndex]);
 	    }
+	    
 	});
 
 	handler_bk.addEventListener('click', function () {
-		var index = searchActiveItem();
+		var index = deactivItem();
 		var newIndex;
 		if (index > 0) {
 			newIndex = index - 1;
-			slider_elements[index].classList.remove('gallery-slider__item--active');
-			slider_elements[newIndex].classList.add('gallery-slider__item--active');
 		}
 
 		if (index === 0) {
 			newIndex = slider_elements.length - 1;
-			slider_elements[index].classList.remove('gallery-slider__item--active');
-			slider_elements[newIndex].classList.add('gallery-slider__item--active'); 
 		}
+		exposeElement(slider_elements[newIndex]);
 	});
 };
 
@@ -201,6 +203,16 @@ if (screen.width > 767) {
 
     galleryContainer.innerHTML = "";
     galleryContainer.appendChild(renderGallery(galleryItems, 0, 4));
+
+    // анимация выведения маленького елемента а большой контейнер по клику на маленький
+    var smallPictures = galleryContainer.querySelectorAll('.gallery-slider__item');
+
+    for (var i = 0; i < smallPictures.length; i++) {
+    	smallPictures[i].addEventListener('click', function (evt) {
+    		var target = event.currentTarget;
+    		bigPicture.src = target.querySelector('img').src.replace('-mini', '');
+    	});
+    };
     
     // анимация ленточного движения маленькиъ елементов - правый хендлер
     handler_fw.addEventListener('click', function () {
@@ -235,8 +247,19 @@ if (screen.width > 767) {
         if (contains(exposedData, lastIndex) === 0) {
         	galleryContainer.appendChild(renderGallery(galleryItems, 0, 4));
         }
+
         var bigPictureUrl = galleryContainer.querySelector('.gallery-slider__item img').src.replace('-mini', '');
         bigPicture.src = bigPictureUrl;
+
+        // анимация выведения маленького елемента а большой контейнер по клику на маленький
+        var smallPictures = galleryContainer.querySelectorAll('.gallery-slider__item');
+
+        for (var i = 0; i < smallPictures.length; i++) {
+	    	smallPictures[i].addEventListener('click', function (evt) {
+	    		var target = event.currentTarget;
+	    		bigPicture.src = target.querySelector('img').src.replace('-mini', '');
+	    	});
+	    }
     });
 
     // анимация ленточного движения маленьких елементов - левый хендлер
@@ -272,17 +295,22 @@ if (screen.width > 767) {
             galleryContainer.appendChild(renderGallery(galleryItems, minIndex, maxIndex));
         }
 
+        var bigPictureUrl = galleryContainer.querySelector('.gallery-slider__item img').src.replace('-mini', '');
+        bigPicture.src = bigPictureUrl;
+
+        // анимация выведения маленького елемента а большой контейнер по клику на маленький
+        var smallPictures = galleryContainer.querySelectorAll('.gallery-slider__item');
+        for (var i = 0; i < smallPictures.length; i++) {
+	    	smallPictures[i].addEventListener('click', function (evt) {
+	    		var target = event.currentTarget;
+	    		
+	    		bigPicture.src = target.querySelector('img').src.replace('-mini', '');
+	    	});
+        }
+
      });
-
-    // анимация выведения маленького елемента а большой контейнер по клику на маленький
-    var smallPictures = galleryContainer.querySelectorAll('.gallery-slider__item');
-
-    for (var i = 0; i < smallPictures.length; i++) {
-    	smallPictures[i].addEventListener('click', function (evt) {
-    		var target = event.currentTarget;
-    		
-    		bigPicture.src = target.querySelector('img').src.replace('-mini', '');
-    	});
-    };
+    
 };
+
+})();
 

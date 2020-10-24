@@ -1,5 +1,7 @@
 "use strict";
 
+(function () {
+
 var testimonialsBlock = document.querySelector('.testimonials');
 var testimonialsElements = testimonialsBlock.querySelectorAll('.testimonials__item');
 var handler_fw = testimonialsBlock.querySelector('.handlers__item--right');
@@ -15,39 +17,42 @@ var searchActiveItem = function () {
 	return index;
 };
 
-var deactivItem = function () {
-	var index = searchActiveItem();
-	testimonialsElements[index].classList.remove('testimonials__item--active');
+var deactivItem = function (element) {
+	element.classList.remove('testimonials__item--active');
+};
+
+var exposeItem = function (element) {
+    element.classList.add('testimonials__item--active');
 };
 
 handler_fw.addEventListener('click', function () {
-	    var index = searchActiveItem();
-	    var newIndex;
-	    if (index < testimonialsElements.length -1) {
-	    	newIndex = index + 1;
-	    	testimonialsElements[index].classList.remove('testimonials__item--active');
-	    	testimonialsElements[newIndex].classList.add('testimonials__item--active');
-	    }
+    var index = searchActiveItem();
+    deactivItem(testimonialsElements[index]);
+    var newIndex;
+    if (index < testimonialsElements.length -1) {
+    	newIndex = index + 1;
+    	exposeItem(testimonialsElements[newIndex]);
+    }
 
-	    if (index === testimonialsElements.length - 1) {
-	    	newIndex = 0;
-	    	testimonialsElements[index].classList.remove('testimonials__item--active');
-	    	testimonialsElements[newIndex].classList.add('testimonials__item--active');
-	    }
-	});
+    if (index === testimonialsElements.length - 1) {
+    	newIndex = 0;
+    	exposeItem(testimonialsElements[newIndex]);
+    }
+});
 
-	handler_bk.addEventListener('click', function () {
-		var index = searchActiveItem();
-		var newIndex;
-		if (index > 0) {
-			newIndex = index - 1;
-			testimonialsElements[index].classList.remove('testimonials__item--active');
-			testimonialsElements[newIndex].classList.add('testimonials__item--active');
-		}
+handler_bk.addEventListener('click', function () {
+	var index = searchActiveItem();
+	deactivItem(testimonialsElements[index]);
+	var newIndex;
+	if (index > 0) {
+		newIndex = index - 1;
+		exposeItem(testimonialsElements[newIndex]);
+	}
 
-		if (index === 0) {
-			newIndex = testimonialsElements.length - 1;
-			testimonialsElements[index].classList.remove('testimonials__item--active');
-			testimonialsElements[newIndex].classList.add('testimonials__item--active'); 
-		}
-	});
+	if (index === 0) {
+		newIndex = testimonialsElements.length - 1;
+		exposeItem(testimonialsElements[newIndex]);
+	}
+});
+
+})();

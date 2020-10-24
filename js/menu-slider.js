@@ -1,3 +1,7 @@
+"use strict";
+
+(function () {
+
 var menuSlider = document.querySelector('.menu-slider');
 var menuPositions = menuSlider.querySelectorAll('.menu-subps__item');
 var handlers = menuSlider.querySelectorAll('.menu-slider-buttons__item');
@@ -33,3 +37,4 @@ for (var i = 0; i < handlers.length; i++) {
         menuPositions[i].classList.add('menu-subps__item--active');
 	});
 };
+})();
