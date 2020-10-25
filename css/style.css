@@ -517,13 +517,13 @@ textarea {
     z-index: -1; }
 
 .menus__item--coffee::before {
-  background-image: url("../img/coffee-menu-mobile.jpg"); }
+  background-image: url("../img/coffee-menu.jpg"); }
 
 .menus__item--food::before {
-  background-image: url("../img/food-menu-mobile.jpg"); }
+  background-image: url("../img/food-menu.jpg"); }
 
 .menus__item--drinks::before {
-  background-image: url("../img/drinks-menu-mobile.jpg"); }
+  background-image: url("../img/drinks-menu.jpg"); }
 
 .menus__item-title {
   margin-bottom: 18px;
@@ -541,6 +541,22 @@ textarea {
   text-align: center;
   color: #e59d75;
   font-family: "Libre Baskerville"; }
+
+.menus__link:hover,
+.menus__link:active {
+  position: relative;
+  display: inline-block; }
+  .menus__link:hover::before,
+  .menus__link:active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e59d75;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .menus__btn {
   margin: 0 5%; }
@@ -614,7 +630,12 @@ textarea {
     .menus__item-content::before {
       display: none; }
   .menus__item:hover .menus__item-content {
-    display: flex; } }
+    display: flex; }
+  .menus__item:hover .menus__item-content .menus__link:hover::before,
+  .menus__item:hover .menus__item-content .menus__link:active::before {
+    width: 35%;
+    left: 50%;
+    transform: translate(-50%); } }
 
 .cafes {
   position: relative;
@@ -1181,7 +1202,7 @@ textarea {
     background-color: transparent;
     top: 0;
     left: 0;
-    background-image: url("../img/job-coffeeld-mobile.jpg");
+    background-image: url("../img/job-coffeeld.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
@@ -1806,6 +1827,10 @@ textarea {
     margin-right: 20px;
     width: unset; } }
 
+@media (min-width: 1200px) {
+  .menu-page__title::before {
+    background-image: url("../img/menu-page-title.jpg"); } }
+
 .menu-slider {
   margin-top: 35px;
   margin-bottom: 30px;
@@ -2364,9 +2389,28 @@ textarea {
   width: 100%;
   min-height: 96px;
   max-height: 145px;
-  overflow: hidden; }
-  .pictures-table__item:last-of-type {
-    margin-bottom: 0; }
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .pictures-table__item:nth-child(1) {
+    background-image: url("../img/gallery-page/gallery-item-1.jpg"); }
+  .pictures-table__item:nth-child(2) {
+    background-image: url("../img/gallery-page/gallery-item-2.jpg"); }
+  .pictures-table__item:nth-child(3) {
+    background-image: url("../img/gallery-page/gallery-item-3.jpg"); }
+  .pictures-table__item:nth-child(4) {
+    background-image: url("../img/gallery-page/gallery-item-4.jpg"); }
+  .pictures-table__item:nth-child(5) {
+    background-image: url("../img/gallery-page/gallery-item-5.jpg"); }
+  .pictures-table__item:nth-child(6) {
+    background-image: url("../img/gallery-page/gallery-item-6.jpg"); }
+  .pictures-table__item:nth-child(7) {
+    background-image: url("../img/gallery-page/gallery-item-7.jpg"); }
+  .pictures-table__item:nth-child(8) {
+    background-image: url("../img/gallery-page/gallery-item-8.jpg"); }
+  .pictures-table__item:nth-child(9) {
+    background-image: url("../img/gallery-page/gallery-item-9.jpg"); }
 
 .pictures-table__item img {
   width: 100%;
@@ -2389,7 +2433,25 @@ textarea {
 @media (min-width: 992px) {
   .pictures-table__item {
     min-height: 205px;
-    max-height: 270px; } }
+    max-height: 270px; }
+  .pictures-table__item:nth-child(1) {
+    flex-basis: 23%; }
+  .pictures-table__item:nth-child(2) {
+    flex-basis: 42%; }
+  .pictures-table__item:nth-child(3) {
+    flex-basis: 31%; }
+  .pictures-table__item:nth-child(4) {
+    flex-basis: 42%; }
+  .pictures-table__item:nth-child(5) {
+    flex-basis: 31%; }
+  .pictures-table__item:nth-child(6) {
+    flex-basis: 23%; }
+  .pictures-table__item:nth-child(7) {
+    flex-basis: 23%; }
+  .pictures-table__item:nth-child(8) {
+    flex-basis: 42%; }
+  .pictures-table__item:nth-child(9) {
+    flex-basis: 31%; } }
 
 .contacts-page {
   position: relative;

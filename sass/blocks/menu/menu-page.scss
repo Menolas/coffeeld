@@ -63,3 +63,13 @@
 		width: unset;
 	}
 }
+
+@media (min-width: 1200px) {
+
+	.menu-page__title {
+
+		&::before {
+			background-image: url("../img/menu-page-title.jpg");
+		}
+	}
+}
