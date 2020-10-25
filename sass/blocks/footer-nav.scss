@@ -20,6 +20,11 @@
 	text-align: center;
 }
 
+.footer-nav__link:hover,
+.footer-nav__link:active {
+	color: $links-color;
+}
+
 @media (min-width: 768px) {
 
 	.footer-nav {

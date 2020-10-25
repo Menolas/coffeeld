@@ -77,6 +77,16 @@
 	fill: rgb(63, 66, 70);
 }
 
+.location-index__social .social__link:hover,
+.location-index__social .social__link:active {
+	background-color: $black;
+}
+
+.location-index__social .social__link:hover svg,
+.location-index__social .social__link:active svg {
+	fill: $white;
+}
+
 @media (min-width: 768px) {
 
 	.location-index {

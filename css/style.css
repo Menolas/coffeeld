@@ -54,7 +54,6 @@
 
 /* font-styles */
 /* colors */
-/* measurements */
 /** {
   outline: 1px solid red;
 }*/
@@ -172,6 +171,18 @@ textarea {
   border: 2px solid #ecc9b7;
   background-color: transparent;
   color: #27292b; }
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  padding: 12px 24px;
+  border: 2px solid #c1a596; }
+
+.btn--framed:hover,
+.btn--framed:active,
+.btn--framed:focus {
+  padding: 14px 26px;
+  border-color: #988378; }
 
 @media (min-width: 768px) {
   .btn {
@@ -436,6 +447,10 @@ textarea {
   display: block;
   color: inherit;
   text-decoration: none; }
+
+.main-nav__link:hover,
+.main-nav__link:active {
+  color: #e59d75; }
 
 @media (min-width: 768px) {
   .main-nav {
@@ -1370,6 +1385,14 @@ textarea {
   height: 20px;
   fill: #3f4246; }
 
+.location-index__social .social__link:hover,
+.location-index__social .social__link:active {
+  background-color: black; }
+
+.location-index__social .social__link:hover svg,
+.location-index__social .social__link:active svg {
+  fill: white; }
+
 @media (min-width: 768px) {
   .location-index {
     padding: 40px 0; }
@@ -1632,6 +1655,10 @@ textarea {
   color: inherit;
   text-decoration: none;
   text-align: center; }
+
+.footer-nav__link:hover,
+.footer-nav__link:active {
+  color: #e59d75; }
 
 @media (min-width: 768px) {
   .footer-nav {

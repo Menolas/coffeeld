@@ -18,6 +18,20 @@
   color: $titles-color;
 }
 
+.btn:hover,
+.btn:active,
+.btn:focus {
+	padding: 12px 24px;
+	border: 2px solid rgb(193, 165, 150);
+}
+
+.btn--framed:hover,
+.btn--framed:active,
+.btn--framed:focus {
+	padding: 14px 26px;
+	border-color: $cacao;
+}
+
 @media (min-width: 768px) {
 
 	.btn {

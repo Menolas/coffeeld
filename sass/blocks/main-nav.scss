@@ -37,6 +37,11 @@
 	@include link-style;
 }
 
+.main-nav__link:hover,
+.main-nav__link:active {
+	color: $links-color;
+}
+
 @media (min-width: 768px) {
 
 	.main-nav {
